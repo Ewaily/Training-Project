@@ -1,0 +1,24 @@
+PODS:
+  - Alamofire (5.0.0-rc.3)
+  - SwiftyJSON (4.3.0)
+  - TweeTextField (1.6.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.0.0-rc.3)
+  - SwiftyJSON (~> 4.0)
+  - TweeTextField
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - SwiftyJSON
+    - TweeTextField
+
+SPEC CHECKSUMS:
+  Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
+  TweeTextField: 2bfb6c48fdbf6eb8038260430244c9f6ebb47bce
+
+PODFILE CHECKSUM: 90520f4ef1045ecc0c968813e20d49311ba8062b
+
+COCOAPODS: 1.8.4

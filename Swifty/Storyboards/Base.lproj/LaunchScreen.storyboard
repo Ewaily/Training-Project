@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashFooter" translatesAutoresizingMaskIntoConstraints="NO" id="dug-uY-bHL">
+                                <rect key="frame" x="0.0" y="742" width="414" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="dug-uY-bHL" secondAttribute="height" multiplier="207:77" id="T1t-bY-Akt"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="inovaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="4aK-90-jXo">
+                                <rect key="frame" x="117" y="826" width="180" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1c8-a4-JXN"/>
+                                    <constraint firstAttribute="height" constant="30" id="p4q-cf-i5L"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AhB-2d-jYv">
+                                <rect key="frame" x="20" y="338" width="374" height="220"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="cp0-hl-ay1"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="UCb-Of-JWX" kind="embed" id="l6p-L3-cap"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AhB-2d-jYv" secondAttribute="trailing" constant="20" id="BYV-sn-v2E"/>
+                            <constraint firstItem="AhB-2d-jYv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Ec4-Wo-Y9o"/>
+                            <constraint firstAttribute="bottom" secondItem="4aK-90-jXo" secondAttribute="bottom" constant="40" id="Fbd-dm-wvM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dug-uY-bHL" secondAttribute="trailing" id="TvO-fU-Vbh"/>
+                            <constraint firstItem="4aK-90-jXo" firstAttribute="centerX" secondItem="dug-uY-bHL" secondAttribute="centerX" id="UB3-AP-8PF"/>
+                            <constraint firstItem="AhB-2d-jYv" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="evW-M1-fJe"/>
+                            <constraint firstItem="AhB-2d-jYv" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="jNj-DS-NdR"/>
+                            <constraint firstItem="dug-uY-bHL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lHp-gY-oAg"/>
+                            <constraint firstAttribute="bottom" secondItem="dug-uY-bHL" secondAttribute="bottom" id="oCe-pE-ZKM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="eLc-MZ-S96">
+            <objects>
+                <viewController id="UCb-Of-JWX" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hmL-6y-7jJ">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="220"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TODAY PRICES" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5hl-lz-9lC">
+                                <rect key="frame" x="0.0" y="311" width="374" height="27"/>
+                                <fontDescription key="fontDescription" name="DINAlternate-Bold" family="DIN Alternate" pointSize="23"/>
+                                <color key="textColor" red="0.1647058824" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VA6-8t-azZ">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="276"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VA6-8t-azZ" firstAttribute="leading" secondItem="hmL-6y-7jJ" secondAttribute="leading" id="Vjq-SM-VHJ"/>
+                            <constraint firstItem="5hl-lz-9lC" firstAttribute="leading" secondItem="hmL-6y-7jJ" secondAttribute="leading" id="Xch-Kk-YTy"/>
+                            <constraint firstItem="5hl-lz-9lC" firstAttribute="top" secondItem="VA6-8t-azZ" secondAttribute="bottom" constant="35" id="Z8E-Cd-Xcd"/>
+                            <constraint firstAttribute="trailing" secondItem="VA6-8t-azZ" secondAttribute="trailing" id="geD-zs-Yu7"/>
+                            <constraint firstItem="VA6-8t-azZ" firstAttribute="top" secondItem="hmL-6y-7jJ" secondAttribute="top" id="hRG-CD-fSe"/>
+                            <constraint firstAttribute="trailing" secondItem="5hl-lz-9lC" secondAttribute="trailing" id="haN-cI-6B3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W5b-Pu-oI5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Ks-fw-0zP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="314"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="SplashFooter" width="375" height="154"/>
+        <image name="SplashLogo" width="196" height="138"/>
+        <image name="inovaLogo" width="132" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FacilityCell" rowHeight="89" id="KGk-i7-Jjw" customClass="FacilitiesTableViewCell" customModule="Swifty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="453" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="453" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-zP-NSV">
+                        <rect key="frame" x="24" y="0.0" width="405" height="66"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DryCleaning" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-M2-Ckg">
+                                <rect key="frame" x="24" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BFY-SB-WZq"/>
+                                    <constraint firstAttribute="width" constant="30" id="yKj-BB-G6v"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Dry Cleaning" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="19S-ul-7vb">
+                                <rect key="frame" x="76" y="24" width="260" height="22"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="18"/>
+                                <color key="textColor" red="0.32156862745098036" green="0.36078431372549019" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Path 362" translatesAutoresizingMaskIntoConstraints="NO" id="hCq-B5-whb">
+                                <rect key="frame" x="366" y="27" width="9" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Ob1-uU-00f"/>
+                                    <constraint firstAttribute="width" constant="9" id="YZA-gu-qpe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="19S-ul-7vb" secondAttribute="bottom" constant="20" id="6OF-PT-hNW"/>
+                            <constraint firstItem="19S-ul-7vb" firstAttribute="top" secondItem="ljY-zP-NSV" secondAttribute="top" constant="24" id="6st-kF-act"/>
+                            <constraint firstItem="19S-ul-7vb" firstAttribute="leading" secondItem="aiK-M2-Ckg" secondAttribute="trailing" constant="22" id="Bp0-Tn-DaO"/>
+                            <constraint firstItem="aiK-M2-Ckg" firstAttribute="leading" secondItem="ljY-zP-NSV" secondAttribute="leading" constant="24" id="JLh-TN-Rkj"/>
+                            <constraint firstAttribute="trailing" secondItem="hCq-B5-whb" secondAttribute="trailing" constant="30" id="Y34-ch-Gex"/>
+                            <constraint firstItem="hCq-B5-whb" firstAttribute="top" secondItem="ljY-zP-NSV" secondAttribute="top" constant="27" id="YaR-yw-brt"/>
+                            <constraint firstItem="aiK-M2-Ckg" firstAttribute="top" secondItem="ljY-zP-NSV" secondAttribute="top" constant="20" id="dcW-C6-xV7"/>
+                            <constraint firstAttribute="height" constant="66" id="gXF-jb-NAo"/>
+                            <constraint firstItem="hCq-B5-whb" firstAttribute="leading" secondItem="19S-ul-7vb" secondAttribute="trailing" constant="30" id="hay-3P-N2V"/>
+                            <constraint firstAttribute="bottom" secondItem="aiK-M2-Ckg" secondAttribute="bottom" constant="16" id="oxE-it-178"/>
+                            <constraint firstAttribute="bottom" secondItem="hCq-B5-whb" secondAttribute="bottom" constant="23" id="q7l-0S-8kD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ljY-zP-NSV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Fm-mT-36B"/>
+                    <constraint firstAttribute="trailing" secondItem="ljY-zP-NSV" secondAttribute="trailing" constant="24" id="Ck4-xc-vBt"/>
+                    <constraint firstItem="ljY-zP-NSV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="NY5-4y-PhJ"/>
+                    <constraint firstAttribute="bottom" secondItem="ljY-zP-NSV" secondAttribute="bottom" constant="18" id="Pd5-PF-YRn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cellUIView" destination="ljY-zP-NSV" id="pyc-cL-NNh"/>
+            </connections>
+            <point key="canvasLocation" x="-25.362318840579711" y="19.754464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="DryCleaning" width="32" height="32"/>
+        <image name="Path 362" width="9" height="15.5"/>
+    </resources>
+</document>

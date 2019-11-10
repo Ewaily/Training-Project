@@ -1,0 +1,6 @@
+framework module Pods_Swifty {
+  umbrella header "Pods-Swifty-umbrella.h"
+
+  export *
+  module * { export * }
+}

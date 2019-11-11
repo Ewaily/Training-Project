@@ -11,6 +11,8 @@ import UIKit
 class FacilitiesTableViewCell: UITableViewCell {
 
     @IBOutlet weak var cellUIView: UIView!
+    @IBOutlet weak var facilityImageView: UIImageView!
+    @IBOutlet weak var facilityLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         drawShadow()
@@ -22,5 +24,10 @@ class FacilitiesTableViewCell: UITableViewCell {
         cellUIView.layer.shadowOpacity = 1
         cellUIView.layer.shadowOffset = .zero
         cellUIView.layer.shadowRadius = 10
+    }
+    
+    func configureCell (cellData: FacilityModel){
+        facilityImageView.image = cellData.facilityPic
+        facilityLabel.text = cellData.facilityTitle
     }
 }

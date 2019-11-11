@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotifiAndProfileCell" rowHeight="219" id="KGk-i7-Jjw" customClass="NotificationsAndProfileTableViewCell" customModule="Swifty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="371" height="219"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="371" height="219"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-SY-btW">
+                        <rect key="frame" x="24" y="0.0" width="323" height="150"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtl-IA-5BN">
+                                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Notifications" translatesAutoresizingMaskIntoConstraints="NO" id="szp-zy-nPM">
+                                        <rect key="frame" x="51" y="30" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="48" id="fxJ-Eq-jdi"/>
+                                            <constraint firstAttribute="height" constant="48" id="yxs-zX-BjX"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GCe-I9-4yv">
+                                        <rect key="frame" x="5" y="103" width="140" height="21"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                                        <color key="textColor" red="0.32156862745098036" green="0.36078431372549019" blue="0.40784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cve-gt-7iy" userLabel="Notifications">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <connections>
+                                            <action selector="pressNotificationsButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uK6-Jf-viJ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="szp-zy-nPM" firstAttribute="top" secondItem="Wtl-IA-5BN" secondAttribute="top" constant="30" id="Ty3-uN-hf4"/>
+                                    <constraint firstAttribute="height" constant="150" id="V0e-aW-VbT"/>
+                                    <constraint firstItem="GCe-I9-4yv" firstAttribute="leading" secondItem="Wtl-IA-5BN" secondAttribute="leading" constant="5" id="Xaf-ZR-v51"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cve-gt-7iy" secondAttribute="bottom" id="aZb-cP-RIF"/>
+                                    <constraint firstItem="Cve-gt-7iy" firstAttribute="top" secondItem="Wtl-IA-5BN" secondAttribute="top" id="cA4-u4-NRY"/>
+                                    <constraint firstItem="GCe-I9-4yv" firstAttribute="top" secondItem="szp-zy-nPM" secondAttribute="bottom" constant="25" id="flI-q7-OW1"/>
+                                    <constraint firstItem="szp-zy-nPM" firstAttribute="centerX" secondItem="Wtl-IA-5BN" secondAttribute="centerX" id="pPo-oz-bre"/>
+                                    <constraint firstAttribute="width" secondItem="Wtl-IA-5BN" secondAttribute="height" multiplier="1:1" id="pcy-jl-FKV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cve-gt-7iy" secondAttribute="trailing" id="tpB-WE-Xt2"/>
+                                    <constraint firstAttribute="trailing" secondItem="GCe-I9-4yv" secondAttribute="trailing" constant="5" id="wX6-jk-zSq"/>
+                                    <constraint firstItem="Cve-gt-7iy" firstAttribute="leading" secondItem="Wtl-IA-5BN" secondAttribute="leading" id="xU0-lp-Cwu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KT4-Sr-FMj">
+                                <rect key="frame" x="173" y="0.0" width="150" height="150"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Profile" translatesAutoresizingMaskIntoConstraints="NO" id="mbt-1b-ZVt">
+                                        <rect key="frame" x="51" y="30" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="tiS-kG-2vz"/>
+                                            <constraint firstAttribute="width" constant="48" id="tt9-bB-LvF"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Profile" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BTj-CQ-j4g">
+                                        <rect key="frame" x="5" y="103" width="140" height="21"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="17"/>
+                                        <color key="textColor" red="0.32156862749999998" green="0.36078431370000003" blue="0.40784313729999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="awd-iO-7yt" userLabel="Profile">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <connections>
+                                            <action selector="pressProfileButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="tCB-Z7-cFv"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="BTj-CQ-j4g" firstAttribute="top" secondItem="mbt-1b-ZVt" secondAttribute="bottom" constant="25" id="4iv-ge-Ec4"/>
+                                    <constraint firstItem="mbt-1b-ZVt" firstAttribute="top" secondItem="KT4-Sr-FMj" secondAttribute="top" constant="30" id="FAV-jz-xTW"/>
+                                    <constraint firstAttribute="trailing" secondItem="BTj-CQ-j4g" secondAttribute="trailing" constant="5" id="Htw-MJ-g1t"/>
+                                    <constraint firstItem="awd-iO-7yt" firstAttribute="top" secondItem="KT4-Sr-FMj" secondAttribute="top" id="RH1-fT-YH2"/>
+                                    <constraint firstItem="BTj-CQ-j4g" firstAttribute="leading" secondItem="KT4-Sr-FMj" secondAttribute="leading" constant="5" id="VaT-eN-EOK"/>
+                                    <constraint firstItem="mbt-1b-ZVt" firstAttribute="centerX" secondItem="KT4-Sr-FMj" secondAttribute="centerX" id="Y4m-iX-Zig"/>
+                                    <constraint firstItem="awd-iO-7yt" firstAttribute="leading" secondItem="KT4-Sr-FMj" secondAttribute="leading" id="b4t-rX-WBq"/>
+                                    <constraint firstAttribute="height" constant="150" id="bm6-Py-q20"/>
+                                    <constraint firstAttribute="width" secondItem="KT4-Sr-FMj" secondAttribute="height" multiplier="1:1" id="ffh-de-MYk"/>
+                                    <constraint firstAttribute="bottom" secondItem="awd-iO-7yt" secondAttribute="bottom" id="g3l-QZ-Wgb"/>
+                                    <constraint firstAttribute="trailing" secondItem="awd-iO-7yt" secondAttribute="trailing" id="gK7-oa-84P"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Wtl-IA-5BN" firstAttribute="leading" secondItem="IcG-SY-btW" secondAttribute="leading" id="6ml-Sd-kft"/>
+                            <constraint firstItem="KT4-Sr-FMj" firstAttribute="top" secondItem="IcG-SY-btW" secondAttribute="top" id="THe-wI-4qc"/>
+                            <constraint firstAttribute="trailing" secondItem="KT4-Sr-FMj" secondAttribute="trailing" id="lfg-IP-2tH"/>
+                            <constraint firstAttribute="height" constant="150" id="o1Y-4N-jIw"/>
+                            <constraint firstItem="Wtl-IA-5BN" firstAttribute="top" secondItem="IcG-SY-btW" secondAttribute="top" id="wFW-R7-sBY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IcG-SY-btW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="6sg-aH-WHO"/>
+                    <constraint firstItem="IcG-SY-btW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="O7l-cs-oMl"/>
+                    <constraint firstAttribute="trailing" secondItem="IcG-SY-btW" secondAttribute="trailing" constant="24" id="jKL-B2-lBl"/>
+                    <constraint firstAttribute="bottom" secondItem="IcG-SY-btW" secondAttribute="bottom" constant="23" id="sFG-yJ-qQY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="notificationsView" destination="Wtl-IA-5BN" id="3g2-un-0OP"/>
+                <outlet property="profileView" destination="KT4-Sr-FMj" id="XHd-IP-Wz0"/>
+            </connections>
+            <point key="canvasLocation" x="-113.768115942029" y="112.16517857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Notifications" width="54" height="54"/>
+        <image name="Profile" width="54" height="54"/>
+    </resources>
+</document>

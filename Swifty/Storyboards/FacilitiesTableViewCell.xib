@@ -71,6 +71,8 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellUIView" destination="ljY-zP-NSV" id="pyc-cL-NNh"/>
+                <outlet property="facilityImageView" destination="aiK-M2-Ckg" id="Be6-qu-oaS"/>
+                <outlet property="facilityLabel" destination="19S-ul-7vb" id="jvW-pI-SyZ"/>
             </connections>
             <point key="canvasLocation" x="-25.362318840579711" y="19.754464285714285"/>
         </tableViewCell>

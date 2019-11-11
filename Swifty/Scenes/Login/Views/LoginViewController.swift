@@ -11,35 +11,31 @@ import TweeTextField
 
 class LoginViewController: UIViewController{
     
-    var loginViewModel: LoginViewModel?
+    var loginViewModel = LoginViewModel()
+    
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var logInButton: UIButton!
     @IBOutlet weak var usernameTextField: TweeActiveTextField!
     @IBOutlet weak var passwordTextField: TweeActiveTextField!
     
     @IBAction func pressLogin(_ sender: Any) {
-        
-        let email = usernameTextField.text
-        let password = passwordTextField.text
-        let locale = "EN"
-        
-        if email!.isEmpty || password!.isEmpty {
-            showAlert(message: "Complete the requird fields", title: "Empty fields")
-            return
-        }
-        
-        let signInParameters = ["email": email, "password": password, "locale": locale] as! [String: String]
-        
-        Login.login(para: signInParameters) { (_: Error?, success: Bool, user: UserModel) in
-            if success {
-                self.loginViewModel = LoginViewModel(userModel: user)
-               // self.showAlert(message: "Welcome \((self.loginViewModel?.userName)!)", title: "Login Success")
-                self.performSegue(withIdentifier: "TabBar", sender: self)
-            }
-            else {
-                self.showAlert(message: "Invalied email or password", title: "Wrong credentials!")
-            }
-        }
+                
+        guard let email = usernameTextField.text, !email.isEmpty else {return}
+        guard let password = passwordTextField.text, !password.isEmpty else {return}        
+        loginViewModel.sendRequest(email: email, password: password) {
+                (error:Error?, userModel:UserModel?) in
+                    
+                    if userModel != nil  {
+                        self.navigateToTabBar(user: userModel!)
+                            }
+                    else {
+                        let alert = UIAlertController(title: "Login Failed", message: "Please Try Again", preferredStyle: .alert)
+                        let action = UIAlertAction(title: "Try Again", style: .default, handler: nil)
+                        alert.addAction(action)
+                        self.present(alert, animated: true ,completion: nil)
+                }
+                    }
+
     }
     
     override func viewDidLoad() {
@@ -86,6 +82,16 @@ class LoginViewController: UIViewController{
 
         let contentInset:UIEdgeInsets = UIEdgeInsets.zero
         scrollView.contentInset = contentInset
+    }
+    
+    func navigateToTabBar(user: UserModel) {
+        
+        if let viewController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBar") as? TabBar {
+            viewController.currentUser = user
+            if let navigator = self.navigationController {
+                navigator.pushViewController(viewController, animated: true)
+            }
+        }
     }
 }
 

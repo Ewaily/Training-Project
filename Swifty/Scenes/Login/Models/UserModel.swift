@@ -13,23 +13,71 @@ class UserModel {
     var name: String?
     var email: String?
     var mobile: Double?
-    var coupons: [String: Int] = ["added": 0, "redeemed": 0, "viewed": 0, "wishlist": 0]
-    var total_saving: String?
+    var avatarURL: String?
+    var coupons: Coupon?
+    var tokens: [Token]?
     
-    class func parseLogin(from value :JSON){
-        let currentUser = UserModel()
-        for reply in value.array! {
-                guard let reply = reply.dictionary else { return  }
-                   currentUser.name = reply["name"]?.string ?? ""
-//                   currentUser.email = data["email"]?.string ?? "nil"
-//                   currentUser.mobile = data["mobile"]?.double ?? 0000
-//                   currentUser.total_saving = json[0]["coupons"]["total_saving"].string ?? "nil"
-//                   currentUser.coupons["viewed"] = json[0]["coupons"]["viewed"].int ?? 0
-//                   currentUser.coupons["added"] = json[0]["coupons"]["added"].int ?? 0
-//                   currentUser.coupons["redeemed"] = json[0]["coupons"]["redeemed"].int ?? 0
-//                   currentUser.coupons["wishlist"] = json[0]["coupons"]["wishlist"].int ?? 0
 
-           }
+    required init(from value :[JSON]) {
+        
+        for reply in value {
+         guard let reply = reply.dictionary else {return}
+         
+            self.name = reply["name"]?.string ?? ""
+            self.email = reply["email"]?.string ?? ""
+            self.mobile = reply["mobile"]?.double ?? 0000
+            self.avatarURL = reply["avatar"]?.string ?? ""
+            coupons = Coupon(reply: reply)
+            if let lTokens = reply["tokens"]?.array{tokens = Token.parseTokens(reply: lTokens)}
+            
+        }
+    }
+     
+
+}
+
+class Coupon {
+    var added: Int?
+    var redeemed: Int?
+    var viewed: Int?
+    var wishlist: Int?
+    var totalSaving: String?
+    
+    required init(reply:[String : JSON]) {
+        self.added = reply["coupons"]?["added"].int ?? 0
+        self.redeemed = reply["coupons"]?["redeemed"].int ?? 0
+        self.viewed = reply["coupons"]?["viewed"].int ?? 0
+        self.wishlist = reply["coupons"]?["wishlist"].int ?? 0
+        self.totalSaving = reply["coupons"]?["total_saving"].string ?? ""
+    }
+    
+}
+
+class Token {
+    var id: Int?
+    var userId: Int?
+    var token: String?
+    var apns: String?
+    var createdAt: String?
+    var updatedAt: String?
+    
+    static func parseTokens(reply:[JSON]) -> [Token]? {
+        var tokens = [Token]()
+        
+        for data in reply {
+            guard let data = data.dictionary else {
+                return nil
+            }
+            let token = Token()
+            token.id = data["id"]?.int ?? 0
+            token.userId = data["user_id"]?.int ?? 0
+            token.token = data["token"]?.string ?? ""
+            token.apns = data["apns"]?.string ?? ""
+            token.createdAt = data["created_at"]?.string ?? ""
+            token.updatedAt = data["updated_at"]?.string ?? ""
+            tokens.append(token)
+        }
+        return tokens
     }
 }
 

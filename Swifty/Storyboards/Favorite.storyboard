@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item-->
+        <!--Favorite-->
         <scene sceneID="FCt-Mv-tt9">
             <objects>
                 <viewController id="pNA-WO-swX" sceneMemberID="viewController">
@@ -20,8 +20,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favotire" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-Hj-BiA">
-                                <rect key="frame" x="105" y="412" width="204" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-Hj-BiA">
+                                <rect key="frame" x="104.5" y="412" width="205" height="72"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
                                 <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jid-ka-giF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabbarFavNormal" id="PUd-wH-wKE"/>
+                    <tabBarItem key="tabBarItem" title="Favorite" image="icTabbarFavNormal" id="PUd-wH-wKE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxz-oA-6ja" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

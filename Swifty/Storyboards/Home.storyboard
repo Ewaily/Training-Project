@@ -12,7 +12,7 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item-->
+        <!--Home-->
         <scene sceneID="Y5f-H0-Pnj">
             <objects>
                 <viewController id="dhE-QB-ztP" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KbB-bV-Fr5"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabbarHomeNormal" id="FwX-uc-hzV"/>
+                    <tabBarItem key="tabBarItem" title="Home" image="icTabbarHomeNormal" id="FwX-uc-hzV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwJ-7s-xNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

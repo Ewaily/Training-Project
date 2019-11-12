@@ -26,6 +26,7 @@
 		10443CBB23781F020040DA5F /* SwiftyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBA23781F020040DA5F /* SwiftyNetwork.swift */; };
 		10443CBD237823FB0040DA5F /* isConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBC237823FB0040DA5F /* isConnected.swift */; };
 		10443CBF2378242E0040DA5F /* NetworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBE2378242E0040DA5F /* NetworkCalls.swift */; };
+		104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D834D237AB484007531DE /* NotificationsViewController.swift */; };
 		106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */; };
 		1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */; };
 		1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */; };
@@ -62,6 +63,7 @@
 		10443CBA23781F020040DA5F /* SwiftyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNetwork.swift; sourceTree = "<group>"; };
 		10443CBC237823FB0040DA5F /* isConnected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isConnected.swift; sourceTree = "<group>"; };
 		10443CBE2378242E0040DA5F /* NetworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCalls.swift; sourceTree = "<group>"; };
+		104D834D237AB484007531DE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndProfileTableViewCell.swift; sourceTree = "<group>"; };
 		1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsAndProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				10443CBA23781F020040DA5F /* SwiftyNetwork.swift */,
 				10443CBE2378242E0040DA5F /* NetworkCalls.swift */,
 				10443CBC237823FB0040DA5F /* isConnected.swift */,
+				104D834D237AB484007531DE /* NotificationsViewController.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */,
 				101E0CE42373159A005D550F /* URL.swift in Sources */,
 				10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */,
 				101E0CE623731A15005D550F /* Messages.swift in Sources */,

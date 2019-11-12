@@ -12,16 +12,16 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Item-->
+        <!--Notifications-->
         <scene sceneID="Wgv-vn-OUf">
             <objects>
-                <viewController storyboardIdentifier="Notification" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pJG-Oc-w2m" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Notification" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pJG-Oc-w2m" customClass="NotificationsViewController" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hOx-hD-3r0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMZ-Uj-JaL">
-                                <rect key="frame" x="39" y="413" width="336" height="70"/>
+                                <rect key="frame" x="44.5" y="412" width="325.5" height="72"/>
                                 <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
                                 <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -34,7 +34,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Ip-F7-OnO"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="icTabbarNotifNormal" id="QMu-R5-ngL"/>
+                    <tabBarItem key="tabBarItem" title="Notifications" image="icTabbarNotifNormal" id="QMu-R5-ngL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeH-aI-7qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

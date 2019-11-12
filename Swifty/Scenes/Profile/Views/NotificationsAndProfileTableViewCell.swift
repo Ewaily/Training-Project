@@ -8,12 +8,22 @@
 
 import UIKit
 
+protocol cellDelegate {
+    func navigate(name: String, identifier: String)
+}
+
 class NotificationsAndProfileTableViewCell: UITableViewCell {
 
     @IBOutlet weak var notificationsView: UIView!
     @IBOutlet weak var profileView: UIView!
     
+    var delegate : cellDelegate?
+    
     @IBAction func pressNotificationsButton(_ sender: UIButton) {
+        if delegate != nil {
+            print("pressed")
+            delegate?.navigate(name: "Notification", identifier: "Notification")
+        }
     }
     
     @IBAction func pressProfileButton(_ sender: UIButton) {
@@ -33,4 +43,5 @@ class NotificationsAndProfileTableViewCell: UITableViewCell {
     }
     
 }
+
 

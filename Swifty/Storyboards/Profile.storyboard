@@ -95,20 +95,10 @@
                                     <constraint firstItem="dt4-GF-SCT" firstAttribute="top" secondItem="eIA-mb-5Ui" secondAttribute="top" constant="70" id="wiU-aJ-GqB"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-RX-Pk3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9U1-RX-Pk3">
                                 <rect key="frame" x="0.0" y="153" width="414" height="660"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="7YW-fs-Xtn">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7YW-fs-Xtn" id="7Sq-2P-q1c">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="yvM-w8-Y7b" id="eau-fz-SpF"/>
                                     <outlet property="delegate" destination="yvM-w8-Y7b" id="3zi-s6-ReF"/>
@@ -121,11 +111,9 @@
                             <constraint firstItem="9U1-RX-Pk3" firstAttribute="bottom" secondItem="Z3R-12-xVQ" secondAttribute="bottom" id="Do8-lQ-dp5"/>
                             <constraint firstItem="eIA-mb-5Ui" firstAttribute="trailing" secondItem="Z3R-12-xVQ" secondAttribute="trailing" id="IPt-Hd-h7G"/>
                             <constraint firstItem="9U1-RX-Pk3" firstAttribute="top" secondItem="eIA-mb-5Ui" secondAttribute="bottom" constant="-87" id="L85-aF-6ab"/>
-                            <constraint firstItem="9U1-RX-Pk3" firstAttribute="top" secondItem="4Z0-jW-Rrr" secondAttribute="bottom" constant="23" id="LfE-Mh-nt1"/>
                             <constraint firstItem="eIA-mb-5Ui" firstAttribute="top" secondItem="Gux-r6-pQ9" secondAttribute="top" id="ax1-Nc-xlx"/>
                             <constraint firstItem="9U1-RX-Pk3" firstAttribute="leading" secondItem="Z3R-12-xVQ" secondAttribute="leading" id="bos-dA-9Vb"/>
                             <constraint firstItem="eIA-mb-5Ui" firstAttribute="leading" secondItem="Z3R-12-xVQ" secondAttribute="leading" id="dhp-qs-edV"/>
-                            <constraint firstItem="9U1-RX-Pk3" firstAttribute="top" secondItem="uJ1-cd-hFV" secondAttribute="bottom" constant="57" id="hkl-x2-kTp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Z3R-12-xVQ"/>
                     </view>

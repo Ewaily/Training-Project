@@ -22,7 +22,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ljY-zP-NSV">
-                        <rect key="frame" x="24" y="0.0" width="405" height="66"/>
+                        <rect key="frame" x="24" y="12" width="405" height="66"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DryCleaning" translatesAutoresizingMaskIntoConstraints="NO" id="aiK-M2-Ckg">
                                 <rect key="frame" x="24" y="20" width="30" height="30"/>
@@ -63,10 +63,10 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="ljY-zP-NSV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Fm-mT-36B"/>
                     <constraint firstAttribute="trailing" secondItem="ljY-zP-NSV" secondAttribute="trailing" constant="24" id="Ck4-xc-vBt"/>
+                    <constraint firstItem="ljY-zP-NSV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="MWV-Wj-sEd"/>
                     <constraint firstItem="ljY-zP-NSV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="NY5-4y-PhJ"/>
-                    <constraint firstAttribute="bottom" secondItem="ljY-zP-NSV" secondAttribute="bottom" constant="18" id="Pd5-PF-YRn"/>
+                    <constraint firstAttribute="bottom" secondItem="ljY-zP-NSV" secondAttribute="bottom" constant="12" id="nGn-1f-L30"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

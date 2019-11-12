@@ -22,7 +22,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IcG-SY-btW">
-                        <rect key="frame" x="24" y="0.0" width="323" height="150"/>
+                        <rect key="frame" x="24" y="10" width="323" height="150"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wtl-IA-5BN">
                                 <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
@@ -113,9 +113,9 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="IcG-SY-btW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="6sg-aH-WHO"/>
-                    <constraint firstItem="IcG-SY-btW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="O7l-cs-oMl"/>
+                    <constraint firstItem="IcG-SY-btW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="O7l-cs-oMl"/>
                     <constraint firstAttribute="trailing" secondItem="IcG-SY-btW" secondAttribute="trailing" constant="24" id="jKL-B2-lBl"/>
-                    <constraint firstAttribute="bottom" secondItem="IcG-SY-btW" secondAttribute="bottom" constant="23" id="sFG-yJ-qQY"/>
+                    <constraint firstAttribute="bottom" secondItem="IcG-SY-btW" secondAttribute="bottom" constant="10" id="sFG-yJ-qQY"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

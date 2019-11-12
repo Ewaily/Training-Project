@@ -16,8 +16,8 @@ class UserModel {
     var avatarURL: String?
     var coupons: Coupon?
     var tokens: [Token]?
+    var userType: UserType?
     
-
     required init(from value :[JSON]) {
         
         for reply in value {
@@ -29,11 +29,14 @@ class UserModel {
             self.avatarURL = reply["avatar"]?.string ?? ""
             coupons = Coupon(reply: reply)
             if let lTokens = reply["tokens"]?.array{tokens = Token.parseTokens(reply: lTokens)}
-            
+            self.userType = .customer
         }
     }
-     
+}
 
+enum UserType {
+    case employee
+    case customer
 }
 
 class Coupon {
@@ -50,7 +53,6 @@ class Coupon {
         self.wishlist = reply["coupons"]?["wishlist"].int ?? 0
         self.totalSaving = reply["coupons"]?["total_saving"].string ?? ""
     }
-    
 }
 
 class Token {

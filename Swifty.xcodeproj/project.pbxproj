@@ -27,6 +27,10 @@
 		10443CBD237823FB0040DA5F /* isConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBC237823FB0040DA5F /* isConnected.swift */; };
 		10443CBF2378242E0040DA5F /* NetworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBE2378242E0040DA5F /* NetworkCalls.swift */; };
 		104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D834D237AB484007531DE /* NotificationsViewController.swift */; };
+		104D8354237AE483007531DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8353237AE483007531DE /* HomeViewController.swift */; };
+		104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8356237AEA15007531DE /* CompanyViewController.swift */; };
+		104D835B237AEC71007531DE /* FeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */; };
+		104D835C237AEC71007531DE /* FeedbackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */; };
 		106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */; };
 		1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */; };
 		1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */; };
@@ -64,6 +68,10 @@
 		10443CBC237823FB0040DA5F /* isConnected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isConnected.swift; sourceTree = "<group>"; };
 		10443CBE2378242E0040DA5F /* NetworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCalls.swift; sourceTree = "<group>"; };
 		104D834D237AB484007531DE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
+		104D8353237AE483007531DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		104D8356237AEA15007531DE /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
+		104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
+		104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackTableViewCell.xib; sourceTree = "<group>"; };
 		106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndProfileTableViewCell.swift; sourceTree = "<group>"; };
 		1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsAndProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -116,6 +124,59 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		104D834F237ADE9D007531DE /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				104D834D237AB484007531DE /* NotificationsViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		104D8350237AE42F007531DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				104D8353237AE483007531DE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		104D8355237AE9F3007531DE /* Company */ = {
+			isa = PBXGroup;
+			children = (
+				104D8356237AEA15007531DE /* CompanyViewController.swift */,
+			);
+			path = Company;
+			sourceTree = "<group>";
+		};
+		104D8358237AEBBF007531DE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				104D835E237AEC96007531DE /* NIBs */,
+				104D835D237AEC76007531DE /* XIBs */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		104D835D237AEC76007531DE /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				102DE48D2374748800855DA3 /* FacilitiesTableViewCell.xib */,
+				1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */,
+				104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		104D835E237AEC96007531DE /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				102DE48C2374748800855DA3 /* FacilitiesTableViewCell.swift */,
+				1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */,
+				104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */,
+			);
+			path = NIBs;
+			sourceTree = "<group>";
+		};
 		10E1B58A2371DF8A005774A5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +213,7 @@
 				10EF7FDE2371A7CC00572C9D /* Global */,
 				10EF7FDD2371A7A800572C9D /* Resources */,
 				10EF7FE12371A86B00572C9D /* Scenes */,
+				104D8358237AEBBF007531DE /* Cells */,
 				10EF7FE02371A80E00572C9D /* Storyboards */,
 				10EF7FDC2371A78F00572C9D /* Supporting Files */,
 				10EF7FD62371A71C00572C9D /* Info.plist */,
@@ -182,7 +244,6 @@
 				10443CBA23781F020040DA5F /* SwiftyNetwork.swift */,
 				10443CBE2378242E0040DA5F /* NetworkCalls.swift */,
 				10443CBC237823FB0040DA5F /* isConnected.swift */,
-				104D834D237AB484007531DE /* NotificationsViewController.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -203,8 +264,6 @@
 				100A1CAF23795F5000E45C12 /* Main.storyboard */,
 				100A1CAD23795EA200E45C12 /* TabBar.storyboard */,
 				10DCD3E32374530500C49D46 /* Profile.storyboard */,
-				102DE48D2374748800855DA3 /* FacilitiesTableViewCell.xib */,
-				1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */,
 				1041BEB82379C25000D49F65 /* Notification.storyboard */,
 				1041BEBA2379C25D00D49F65 /* Favorite.storyboard */,
 				1041BEBC2379C26C00D49F65 /* Company.storyboard */,
@@ -219,6 +278,9 @@
 				10EF7FE22371A87900572C9D /* Login */,
 				100A1CB42379ACDC00E45C12 /* TabBar */,
 				10EF7FE32371A88400572C9D /* Profile */,
+				104D8350237AE42F007531DE /* Home */,
+				104D834F237ADE9D007531DE /* Notifications */,
+				104D8355237AE9F3007531DE /* Company */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -279,8 +341,6 @@
 			isa = PBXGroup;
 			children = (
 				10DCD3E5237454DE00C49D46 /* ProfileView.swift */,
-				102DE48C2374748800855DA3 /* FacilitiesTableViewCell.swift */,
-				1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -371,6 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				100A1CB023795F5000E45C12 /* Main.storyboard in Resources */,
+				104D835C237AEC71007531DE /* FeedbackTableViewCell.xib in Resources */,
 				1041BEBF2379C27900D49F65 /* Home.storyboard in Resources */,
 				1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */,
 				10EF7FD52371A71C00572C9D /* LaunchScreen.storyboard in Resources */,
@@ -439,6 +500,7 @@
 				10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */,
 				101E0CE623731A15005D550F /* Messages.swift in Sources */,
 				100A1CB3237978B900E45C12 /* UserManager.swift in Sources */,
+				104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */,
 				10443CBD237823FB0040DA5F /* isConnected.swift in Sources */,
 				102D6FC3237A085B00D6CB44 /* Color.swift in Sources */,
 				102D6FC5237A0C9600D6CB44 /* FacilityModel.swift in Sources */,
@@ -449,7 +511,9 @@
 				102D6FC7237A0DAE00D6CB44 /* FacilityViewModel.swift in Sources */,
 				10443CBB23781F020040DA5F /* SwiftyNetwork.swift in Sources */,
 				10EF7FCB2371A71800572C9D /* SceneDelegate.swift in Sources */,
+				104D8354237AE483007531DE /* HomeViewController.swift in Sources */,
 				101E0CE8237322BF005D550F /* UserModel.swift in Sources */,
+				104D835B237AEC71007531DE /* FeedbackTableViewCell.swift in Sources */,
 				10443CBF2378242E0040DA5F /* NetworkCalls.swift in Sources */,
 				100A1CB62379AD3800E45C12 /* TabBar.swift in Sources */,
 				1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */,

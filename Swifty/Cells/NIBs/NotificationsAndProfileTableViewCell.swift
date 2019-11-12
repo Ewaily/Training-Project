@@ -9,7 +9,7 @@
 import UIKit
 
 protocol cellDelegate {
-    func navigate(name: String, identifier: String)
+    func navigate(index: Int)
 }
 
 class NotificationsAndProfileTableViewCell: UITableViewCell {
@@ -21,12 +21,14 @@ class NotificationsAndProfileTableViewCell: UITableViewCell {
     
     @IBAction func pressNotificationsButton(_ sender: UIButton) {
         if delegate != nil {
-            print("pressed")
-            delegate?.navigate(name: "Notification", identifier: "Notification")
+            delegate?.navigate(index: 3)
         }
     }
     
     @IBAction func pressProfileButton(_ sender: UIButton) {
+        if delegate != nil {
+            delegate?.navigate(index: 4)
+        }
     }
     
     override func awakeFromNib() {
@@ -41,7 +43,6 @@ class NotificationsAndProfileTableViewCell: UITableViewCell {
         cell.layer.shadowOffset = .zero
         cell.layer.shadowRadius = 10
     }
-    
 }
 
 

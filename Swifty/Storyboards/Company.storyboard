@@ -6,40 +6,53 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-UI-Display-Regular.ttf">
-            <string>SFUIDisplay-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Company-->
         <scene sceneID="O6T-fB-hdQ">
             <objects>
-                <viewController id="Oqx-8a-dTM" sceneMemberID="viewController">
+                <viewController id="Oqx-8a-dTM" customClass="CompanyViewController" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UPM-ca-5NJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozi-kD-CCr">
-                                <rect key="frame" x="80.5" y="412" width="253" height="72"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
-                                <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3M-JL-lJz">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" red="0.30762506065243361" green="0.66761183375634525" blue="0.66761183375634525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem title="Company" id="RXY-M1-QcY"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qI0-ml-aq2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Oqx-8a-dTM" id="BR6-vW-vy4"/>
+                                    <outlet property="delegate" destination="Oqx-8a-dTM" id="BiJ-8L-CS5"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="ozi-kD-CCr" firstAttribute="centerY" secondItem="UPM-ca-5NJ" secondAttribute="centerY" id="YHX-xb-f9x"/>
-                            <constraint firstItem="ozi-kD-CCr" firstAttribute="centerX" secondItem="UPM-ca-5NJ" secondAttribute="centerX" id="pMd-yA-jfs"/>
+                            <constraint firstItem="qI0-ml-aq2" firstAttribute="top" secondItem="v3M-JL-lJz" secondAttribute="bottom" id="3SG-2h-FVB"/>
+                            <constraint firstItem="qI0-ml-aq2" firstAttribute="bottom" secondItem="Ane-Q3-OPC" secondAttribute="bottom" id="PxG-Tq-CrA"/>
+                            <constraint firstItem="qI0-ml-aq2" firstAttribute="trailing" secondItem="Ane-Q3-OPC" secondAttribute="trailing" id="VRN-Wm-xOL"/>
+                            <constraint firstItem="qI0-ml-aq2" firstAttribute="leading" secondItem="Ane-Q3-OPC" secondAttribute="leading" id="Vqg-Ki-kVg"/>
+                            <constraint firstItem="v3M-JL-lJz" firstAttribute="leading" secondItem="qI0-ml-aq2" secondAttribute="leading" id="hcX-2a-zR3"/>
+                            <constraint firstItem="v3M-JL-lJz" firstAttribute="trailing" secondItem="qI0-ml-aq2" secondAttribute="trailing" id="ik4-YA-PUP"/>
+                            <constraint firstItem="v3M-JL-lJz" firstAttribute="top" secondItem="Ane-Q3-OPC" secondAttribute="top" id="lOx-IY-fnj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ane-Q3-OPC"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Company" image="icTabbarCompanyNormal" id="NAo-Pl-zSn"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="navigationBarTitle" destination="RXY-M1-QcY" id="cqH-F5-7Ay"/>
+                        <outlet property="tableView" destination="qI0-ml-aq2" id="zKY-WK-4DD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5ud-hC-PAn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="89"/>
+            <point key="canvasLocation" x="137.68115942028987" y="88.392857142857139"/>
         </scene>
     </scenes>
     <resources>

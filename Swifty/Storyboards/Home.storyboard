@@ -15,22 +15,52 @@
         <!--Home-->
         <scene sceneID="Y5f-H0-Pnj">
             <objects>
-                <viewController id="dhE-QB-ztP" sceneMemberID="viewController">
+                <viewController id="dhE-QB-ztP" customClass="HomeViewController" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eKA-tg-2bN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTA-vc-HPv">
-                                <rect key="frame" x="129" y="412" width="156.5" height="72"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
-                                <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J63-V2-jev">
+                                <rect key="frame" x="123" y="364" width="168" height="168"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k9G-wG-S7r">
+                                        <rect key="frame" x="5" y="20" width="158" height="48"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="30"/>
+                                        <state key="normal" title="Employee">
+                                            <color key="titleColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="employeeButtonPressed:" destination="dhE-QB-ztP" eventType="touchUpInside" id="mZ5-Gc-8Wt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYI-Pg-fSb">
+                                        <rect key="frame" x="5" y="100" width="158" height="48"/>
+                                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="30"/>
+                                        <state key="normal" title="Customer">
+                                            <color key="titleColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="customerButtonPressed:" destination="dhE-QB-ztP" eventType="touchUpInside" id="mr6-a5-1aP"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="168" id="IIZ-pQ-27Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="FYI-Pg-fSb" secondAttribute="trailing" constant="5" id="Lw5-66-cgD"/>
+                                    <constraint firstAttribute="height" constant="168" id="UUS-k8-NnP"/>
+                                    <constraint firstAttribute="trailing" secondItem="k9G-wG-S7r" secondAttribute="trailing" constant="5" id="a4u-Yb-H7I"/>
+                                    <constraint firstAttribute="bottom" secondItem="FYI-Pg-fSb" secondAttribute="bottom" constant="20" id="gUZ-h8-d12"/>
+                                    <constraint firstItem="k9G-wG-S7r" firstAttribute="leading" secondItem="J63-V2-jev" secondAttribute="leading" constant="5" id="iu4-pT-A8q"/>
+                                    <constraint firstItem="k9G-wG-S7r" firstAttribute="top" secondItem="J63-V2-jev" secondAttribute="top" constant="20" id="jsC-Ma-CWz"/>
+                                    <constraint firstItem="FYI-Pg-fSb" firstAttribute="leading" secondItem="J63-V2-jev" secondAttribute="leading" constant="5" id="uvh-0q-PB2"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="MTA-vc-HPv" firstAttribute="centerY" secondItem="eKA-tg-2bN" secondAttribute="centerY" id="d4h-mX-ikZ"/>
-                            <constraint firstItem="MTA-vc-HPv" firstAttribute="centerX" secondItem="eKA-tg-2bN" secondAttribute="centerX" id="mAd-ap-feC"/>
+                            <constraint firstItem="J63-V2-jev" firstAttribute="centerY" secondItem="eKA-tg-2bN" secondAttribute="centerY" id="EqW-ky-ldc"/>
+                            <constraint firstItem="J63-V2-jev" firstAttribute="centerX" secondItem="eKA-tg-2bN" secondAttribute="centerX" id="IU2-sV-5yJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="KbB-bV-Fr5"/>
                     </view>

@@ -1,18 +1,17 @@
 //
-//  TabBar.swift
+//  NotificationsViewController.swift
 //  Swifty
 //
-//  Created by Muhammad Ewaily on 11/11/19.
+//  Created by Muhammad Ewaily on 11/12/19.
 //  Copyright © 2019 Muhammad Ewaily. All rights reserved.
 //
 
 import UIKit
 
-class TabBar: UITabBarController {
+class NotificationsViewController: UIViewController {
 
-    var currentUser: UserModel?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+
     }
 }

@@ -20,9 +20,26 @@ class LoginViewController: UIViewController{
     
     @IBAction func pressLogin(_ sender: Any) {
                 
-        guard let email = usernameTextField.text, !email.isEmpty else {return}
-        guard let password = passwordTextField.text, !password.isEmpty else {return}        
-        loginViewModel.sendRequest(email: email, password: password) {
+//        guard let email = usernameTextField.text, !email.isEmpty else {return}
+//        guard let password = passwordTextField.text, !password.isEmpty else {return}
+//        loginViewModel.sendRequest(email: email, password: password) {
+//                (error:Error?, userModel:UserModel?) in
+//
+//                    if userModel != nil  {
+//                        self.navigateToTabBar(user: userModel!)
+//                            }
+//                    else {
+//                        let alert = UIAlertController(title: "Login Failed", message: "Please Try Again", preferredStyle: .alert)
+//                        let action = UIAlertAction(title: "Try Again", style: .default, handler: nil)
+//                        alert.addAction(action)
+//                        self.present(alert, animated: true ,completion: nil)
+//                }
+//                    }
+        temp()
+    }
+    
+    func temp() {
+        loginViewModel.sendRequest(email: "m@s34.com", password: "12345678") {
                 (error:Error?, userModel:UserModel?) in
                     
                     if userModel != nil  {
@@ -35,7 +52,6 @@ class LoginViewController: UIViewController{
                         self.present(alert, animated: true ,completion: nil)
                 }
                     }
-
     }
     
     override func viewDidLoad() {

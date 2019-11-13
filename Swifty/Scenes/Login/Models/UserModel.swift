@@ -22,7 +22,6 @@ class UserModel {
         
         for reply in value {
          guard let reply = reply.dictionary else {return}
-         
             self.name = reply["name"]?.string ?? ""
             self.email = reply["email"]?.string ?? ""
             self.mobile = reply["mobile"]?.double ?? 0000

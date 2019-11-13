@@ -31,7 +31,7 @@ class ProfileView: UIViewController {
     func setupView(currentUser: UserModel) {
         nameLabel.text = currentUser.name
         emailLabel.text = currentUser.email
-        mobileLabel.text = (currentUser.mobile)?.description
+     //   mobileLabel.text = (currentUser.mobile)?.description
         loadImage(avatarURL: currentUser.avatarURL ?? "")
     }
 

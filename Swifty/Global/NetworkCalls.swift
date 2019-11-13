@@ -17,7 +17,7 @@ class NetworkCall:NSObject {
             switch respone.result{
             case .success(let value):
                 guard let json = JSON(value).array else { return }
-               let userModel =  UserModel(from: json)
+                let userModel =  UserModel(from: json)
                 completion(nil,userModel)
             case .failure(let error):
                 completion(error, nil)

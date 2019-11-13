@@ -39,6 +39,7 @@ class LoginViewController: UIViewController{
     }
     
     func temp() {
+
         loginViewModel.sendRequest(email: "m@s34.com", password: "12345678") {
                 (error:Error?, userModel:UserModel?) in
                     

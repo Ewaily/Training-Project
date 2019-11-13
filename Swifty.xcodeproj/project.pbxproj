@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		100A1CAE23795EA200E45C12 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100A1CAD23795EA200E45C12 /* TabBar.storyboard */; };
-		100A1CB023795F5000E45C12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100A1CAF23795F5000E45C12 /* Main.storyboard */; };
 		100A1CB3237978B900E45C12 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1CB2237978B900E45C12 /* UserManager.swift */; };
 		100A1CB62379AD3800E45C12 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1CB52379AD3800E45C12 /* TabBar.swift */; };
 		101E0CE42373159A005D550F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E0CE323731599005D550F /* URL.swift */; };
@@ -34,9 +33,10 @@
 		106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */; };
 		1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */; };
 		1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */; };
+		10B7C14C237C0AE800D78610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B7C14B237C0AE800D78610 /* Main.storyboard */; };
+		10B7C14E237C0C0800D78610 /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B7C14D237C0C0800D78610 /* SF-UI-Display-Regular.ttf */; };
 		10DCD3E42374530500C49D46 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DCD3E32374530500C49D46 /* Profile.storyboard */; };
 		10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCD3E5237454DE00C49D46 /* ProfileView.swift */; };
-		10E1B58E2371E157005774A5 /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10E1B58D2371E157005774A5 /* SF-UI-Display-Regular.ttf */; };
 		10EF7FC92371A71800572C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF7FC82371A71800572C9D /* AppDelegate.swift */; };
 		10EF7FCB2371A71800572C9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF7FCA2371A71800572C9D /* SceneDelegate.swift */; };
 		10EF7FCD2371A71800572C9D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF7FCC2371A71800572C9D /* LoginViewController.swift */; };
@@ -49,7 +49,6 @@
 		036ACF2E4B971F051B0F00DD /* Pods_Swifty.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swifty.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		081525853DF712CF4D506947 /* Pods-Swifty.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swifty.debug.xcconfig"; path = "Target Support Files/Pods-Swifty/Pods-Swifty.debug.xcconfig"; sourceTree = "<group>"; };
 		100A1CAD23795EA200E45C12 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
-		100A1CAF23795F5000E45C12 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../../../../.Trash/Main.storyboard; sourceTree = "<group>"; };
 		100A1CB2237978B900E45C12 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		100A1CB52379AD3800E45C12 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		101E0CE323731599005D550F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
@@ -75,9 +74,10 @@
 		106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndProfileTableViewCell.swift; sourceTree = "<group>"; };
 		1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsAndProfileTableViewCell.xib; sourceTree = "<group>"; };
+		10B7C14B237C0AE800D78610 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		10B7C14D237C0C0800D78610 /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
 		10DCD3E32374530500C49D46 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		10DCD3E5237454DE00C49D46 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		10E1B58D2371E157005774A5 /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "SF-UI-Display-Regular.ttf"; path = "../../../../Downloads/SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
 		10EF7FC52371A71800572C9D /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10EF7FC82371A71800572C9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		10EF7FCA2371A71800572C9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 		10E1B58A2371DF8A005774A5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				10E1B58D2371E157005774A5 /* SF-UI-Display-Regular.ttf */,
+				10B7C14D237C0C0800D78610 /* SF-UI-Display-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -260,8 +260,8 @@
 		10EF7FE02371A80E00572C9D /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				10B7C14B237C0AE800D78610 /* Main.storyboard */,
 				10EF7FD32371A71C00572C9D /* LaunchScreen.storyboard */,
-				100A1CAF23795F5000E45C12 /* Main.storyboard */,
 				100A1CAD23795EA200E45C12 /* TabBar.storyboard */,
 				10DCD3E32374530500C49D46 /* Profile.storyboard */,
 				1041BEB82379C25000D49F65 /* Notification.storyboard */,
@@ -430,17 +430,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				100A1CB023795F5000E45C12 /* Main.storyboard in Resources */,
 				104D835C237AEC71007531DE /* FeedbackTableViewCell.xib in Resources */,
 				1041BEBF2379C27900D49F65 /* Home.storyboard in Resources */,
 				1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */,
 				10EF7FD52371A71C00572C9D /* LaunchScreen.storyboard in Resources */,
 				10EF7FD22371A71C00572C9D /* Assets.xcassets in Resources */,
 				10DCD3E42374530500C49D46 /* Profile.storyboard in Resources */,
-				10E1B58E2371E157005774A5 /* SF-UI-Display-Regular.ttf in Resources */,
+				10B7C14C237C0AE800D78610 /* Main.storyboard in Resources */,
 				1041BEBB2379C25D00D49F65 /* Favorite.storyboard in Resources */,
 				1041BEBD2379C26C00D49F65 /* Company.storyboard in Resources */,
 				1041BEB92379C25000D49F65 /* Notification.storyboard in Resources */,
+				10B7C14E237C0C0800D78610 /* SF-UI-Display-Regular.ttf in Resources */,
 				102DE48F2374748800855DA3 /* FacilitiesTableViewCell.xib in Resources */,
 				100A1CAE23795EA200E45C12 /* TabBar.storyboard in Resources */,
 			);

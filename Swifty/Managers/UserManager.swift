@@ -10,15 +10,11 @@ import Foundation
 
 class UserManager {
     var currentUser: UserModel?
-    
     static var sharedUserManager: UserManager = {
-    
-        let userManager = UserManager()
-
+                let userManager = UserManager()
         return userManager
     }()
     
     private init () {
-        
     }
 }

@@ -24,9 +24,10 @@ class CompanyViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+        //self.title
         setDisplayArray()
         tableView.reloadData()
+        
     }
 
     enum DisplayCells {
@@ -65,48 +66,9 @@ class CompanyViewController: UIViewController {
         tableView.estimatedRowHeight = UITableView.automaticDimension
         tableView.rowHeight = 60
     }
-    
 }
 
 extension CompanyViewController: UITableViewDelegate {
-}
-
-extension CompanyViewController: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return displayArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        switch displayArray[section] {
-        case .infoCell:
-            return 1
-        case .facilityCell:
-            return 6
-        case .feedbackCell:
-            return 1
-        }
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        switch displayArray[indexPath.section] {
-        case .infoCell:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as! NotificationsAndProfileTableViewCell
-            cell.delegate = self
-            return cell
-        case .facilityCell:
-            let data = facilities[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as! FacilitiesTableViewCell
-            cell.configureCell(cellData: data)
-            return cell
-        case .feedbackCell:
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FeedbackCell") as! FeedbackTableViewCell
-            return cell
-        }
-    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
@@ -136,6 +98,44 @@ extension CompanyViewController: UITableViewDataSource {
             return 46
         default:
             return 0
+        }
+    }
+}
+
+extension CompanyViewController: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        
+        return displayArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        switch displayArray[section] {
+        case .infoCell:
+            return 1
+        case .facilityCell:
+            return facilities.count
+        case .feedbackCell:
+            return 1
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch displayArray[indexPath.section] {
+        case .infoCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as! NotificationsAndProfileTableViewCell
+            cell.delegate = self
+            return cell
+        case .facilityCell:
+            let data = facilities[indexPath.row]
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as! FacilitiesTableViewCell
+            cell.configureCell(cellData: data)
+            return cell
+        case .feedbackCell:
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeedbackCell") as! FeedbackTableViewCell
+            return cell
         }
     }
 }

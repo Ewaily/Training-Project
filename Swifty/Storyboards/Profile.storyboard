@@ -118,6 +118,7 @@
                         <viewLayoutGuide key="safeArea" id="Z3R-12-xVQ"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Profile" image="icTabbarProfileNormal" id="oqW-Pd-yKa"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="avatarImage" destination="cbY-rL-SnW" id="rst-Gp-WT6"/>

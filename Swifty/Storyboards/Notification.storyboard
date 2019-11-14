@@ -35,6 +35,7 @@
                         <viewLayoutGuide key="safeArea" id="5Ip-F7-OnO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="icTabbarNotifNormal" id="QMu-R5-ngL"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeH-aI-7qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

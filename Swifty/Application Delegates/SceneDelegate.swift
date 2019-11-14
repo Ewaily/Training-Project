@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 if let viewController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBar") as? TabBar {
                     let navigationController = UINavigationController()
                     navigationController.viewControllers = [viewController]
-                    navigationController.hidesBarsOnTap = true
+//                    navigationController.hidesBarsOnTap = true
+                    navigationController.navigationBar.isHidden = true
                     self.window?.rootViewController = navigationController
                 }
             }

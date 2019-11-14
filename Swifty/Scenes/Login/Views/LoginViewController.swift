@@ -46,6 +46,8 @@ class LoginViewController: UIViewController{
         updateButtonUI()
         setupKeyboardDismissRecognizer()
         setupNotificationCenter()
+        self.usernameTextField.text = "m@s34.com"
+        self.passwordTextField.text = "12345678"
     }
     
     func updateButtonUI() {

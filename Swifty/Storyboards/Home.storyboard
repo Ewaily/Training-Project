@@ -65,6 +65,7 @@
                         <viewLayoutGuide key="safeArea" id="KbB-bV-Fr5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="icTabbarHomeNormal" id="FwX-uc-hzV"/>
+                    <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BwJ-7s-xNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

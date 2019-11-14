@@ -11,10 +11,28 @@ import Foundation
 class UserManager {
     var currentUser: UserModel?
     static var sharedUserManager: UserManager = {
-                let userManager = UserManager()
+        let userManager = UserManager()
         return userManager
     }()
-    
     private init () {
     }
+    
+    func deleteUser() {
+        currentUser?.deleteUserData()
+    }
+    
+    func checkUser() -> Bool {
+        loadUser()
+        return currentUser != nil
+    }
+    
+    func loadUser() {
+        currentUser = UserModel.loadUserData()
+    }
+    
+    func saveUser(user: UserModel) {
+        self.currentUser = user
+        currentUser?.saveUserData()
+    }
 }
+

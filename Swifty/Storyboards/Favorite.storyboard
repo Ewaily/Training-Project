@@ -15,22 +15,26 @@
         <!--Favorite-->
         <scene sceneID="FCt-Mv-tt9">
             <objects>
-                <viewController id="pNA-WO-swX" sceneMemberID="viewController">
+                <viewController id="pNA-WO-swX" customClass="LogoutViewController" customModule="Swifty" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Npj-Hf-kiX">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Favorite" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nd2-Hj-BiA">
-                                <rect key="frame" x="104.5" y="412" width="205" height="72"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
-                                <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="id7-W7-rj7">
+                                <rect key="frame" x="131" y="412" width="152" height="72"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="50"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutButtonPressed:" destination="pNA-WO-swX" eventType="touchUpInside" id="tZ2-31-klp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="nd2-Hj-BiA" firstAttribute="centerY" secondItem="Npj-Hf-kiX" secondAttribute="centerY" id="YK7-DI-Tan"/>
-                            <constraint firstItem="nd2-Hj-BiA" firstAttribute="centerX" secondItem="Npj-Hf-kiX" secondAttribute="centerX" id="inX-fD-wLW"/>
+                            <constraint firstItem="id7-W7-rj7" firstAttribute="centerX" secondItem="Npj-Hf-kiX" secondAttribute="centerX" id="5ek-tS-GHt"/>
+                            <constraint firstItem="id7-W7-rj7" firstAttribute="centerY" secondItem="Npj-Hf-kiX" secondAttribute="centerY" id="nXF-i1-sfQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jid-ka-giF"/>
                     </view>

@@ -18,6 +18,8 @@ class NetworkCall:NSObject {
             case .success(let value):
                 guard let json = JSON(value).array else { return }
                 let userModel =  UserModel(from: json)
+//                userModel.saveUserData()
+                (UIApplication.shared.delegate as? AppDelegate)?.userManager.saveUser(user: userModel)
                 completion(nil,userModel)
             case .failure(let error):
                 completion(error, nil)

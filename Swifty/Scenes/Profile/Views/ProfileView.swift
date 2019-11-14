@@ -18,7 +18,6 @@ class ProfileView: UIViewController {
     @IBOutlet weak var avatarImage: UIImageView!
     
     let facilities: [FacilityModel] = FacilityModel.creatCellData()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +30,7 @@ class ProfileView: UIViewController {
     func setupView(currentUser: UserModel) {
         nameLabel.text = currentUser.name
         emailLabel.text = currentUser.email
-     //   mobileLabel.text = (currentUser.mobile)?.description
+        mobileLabel.text = (currentUser.mobile)?.description
         loadImage(avatarURL: currentUser.avatarURL ?? "")
     }
 
@@ -77,15 +76,18 @@ extension ProfileView: UITableViewDataSource {
         
         switch indexPath.section {
         case 0 :
-            let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as! NotificationsAndProfileTableViewCell
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as? NotificationsAndProfileTableViewCell {
             cell.delegate = self
             return cell
+            }
         default:
             let data = facilities[indexPath.row]
-            let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as! FacilitiesTableViewCell
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as? FacilitiesTableViewCell {
             cell.configureCell(cellData: data)
             return cell
+            }
         }
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {

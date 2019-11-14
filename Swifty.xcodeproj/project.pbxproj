@@ -11,7 +11,7 @@
 		100A1CB3237978B900E45C12 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1CB2237978B900E45C12 /* UserManager.swift */; };
 		100A1CB62379AD3800E45C12 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100A1CB52379AD3800E45C12 /* TabBar.swift */; };
 		101E0CE42373159A005D550F /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E0CE323731599005D550F /* URL.swift */; };
-		101E0CE623731A15005D550F /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E0CE523731A15005D550F /* Messages.swift */; };
+		101E0CE623731A15005D550F /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E0CE523731A15005D550F /* Alert.swift */; };
 		101E0CE8237322BF005D550F /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101E0CE7237322BF005D550F /* UserModel.swift */; };
 		102D6FC3237A085B00D6CB44 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102D6FC2237A085B00D6CB44 /* Color.swift */; };
 		102D6FC5237A0C9600D6CB44 /* FacilityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102D6FC4237A0C9600D6CB44 /* FacilityModel.swift */; };
@@ -35,6 +35,7 @@
 		1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */; };
 		10B7C14C237C0AE800D78610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B7C14B237C0AE800D78610 /* Main.storyboard */; };
 		10B7C14E237C0C0800D78610 /* SF-UI-Display-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10B7C14D237C0C0800D78610 /* SF-UI-Display-Regular.ttf */; };
+		10BF8D4D237D845D0089C886 /* LogoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10BF8D4C237D845D0089C886 /* LogoutViewController.swift */; };
 		10DCD3E42374530500C49D46 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10DCD3E32374530500C49D46 /* Profile.storyboard */; };
 		10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10DCD3E5237454DE00C49D46 /* ProfileView.swift */; };
 		10EF7FC92371A71800572C9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10EF7FC82371A71800572C9D /* AppDelegate.swift */; };
@@ -52,7 +53,7 @@
 		100A1CB2237978B900E45C12 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		100A1CB52379AD3800E45C12 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 		101E0CE323731599005D550F /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
-		101E0CE523731A15005D550F /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
+		101E0CE523731A15005D550F /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		101E0CE7237322BF005D550F /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		102D6FC2237A085B00D6CB44 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		102D6FC4237A0C9600D6CB44 /* FacilityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacilityModel.swift; sourceTree = "<group>"; };
@@ -76,6 +77,7 @@
 		1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsAndProfileTableViewCell.xib; sourceTree = "<group>"; };
 		10B7C14B237C0AE800D78610 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		10B7C14D237C0C0800D78610 /* SF-UI-Display-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-UI-Display-Regular.ttf"; sourceTree = "<group>"; };
+		10BF8D4C237D845D0089C886 /* LogoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutViewController.swift; sourceTree = "<group>"; };
 		10DCD3E32374530500C49D46 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		10DCD3E5237454DE00C49D46 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		10EF7FC52371A71800572C9D /* Swifty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swifty.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,6 +179,14 @@
 			path = NIBs;
 			sourceTree = "<group>";
 		};
+		10BF8D4B237D84260089C886 /* Logout */ = {
+			isa = PBXGroup;
+			children = (
+				10BF8D4C237D845D0089C886 /* LogoutViewController.swift */,
+			);
+			path = Logout;
+			sourceTree = "<group>";
+		};
 		10E1B58A2371DF8A005774A5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -240,7 +250,6 @@
 			isa = PBXGroup;
 			children = (
 				101E0CE323731599005D550F /* URL.swift */,
-				101E0CE523731A15005D550F /* Messages.swift */,
 				10443CBA23781F020040DA5F /* SwiftyNetwork.swift */,
 				10443CBE2378242E0040DA5F /* NetworkCalls.swift */,
 				10443CBC237823FB0040DA5F /* isConnected.swift */,
@@ -276,6 +285,7 @@
 			isa = PBXGroup;
 			children = (
 				10EF7FE22371A87900572C9D /* Login */,
+				10BF8D4B237D84260089C886 /* Logout */,
 				100A1CB42379ACDC00E45C12 /* TabBar */,
 				10EF7FE32371A88400572C9D /* Profile */,
 				104D8350237AE42F007531DE /* Home */,
@@ -356,6 +366,7 @@
 		10EF7FEC2371AA4A00572C9D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				101E0CE523731A15005D550F /* Alert.swift */,
 				102D6FC2237A085B00D6CB44 /* Color.swift */,
 			);
 			path = Extensions;
@@ -498,13 +509,14 @@
 				104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */,
 				101E0CE42373159A005D550F /* URL.swift in Sources */,
 				10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */,
-				101E0CE623731A15005D550F /* Messages.swift in Sources */,
+				101E0CE623731A15005D550F /* Alert.swift in Sources */,
 				100A1CB3237978B900E45C12 /* UserManager.swift in Sources */,
 				104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */,
 				10443CBD237823FB0040DA5F /* isConnected.swift in Sources */,
 				102D6FC3237A085B00D6CB44 /* Color.swift in Sources */,
 				102D6FC5237A0C9600D6CB44 /* FacilityModel.swift in Sources */,
 				10EF7FCD2371A71800572C9D /* LoginViewController.swift in Sources */,
+				10BF8D4D237D845D0089C886 /* LogoutViewController.swift in Sources */,
 				10EF7FC92371A71800572C9D /* AppDelegate.swift in Sources */,
 				106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */,
 				102DE48E2374748800855DA3 /* FacilitiesTableViewCell.swift in Sources */,

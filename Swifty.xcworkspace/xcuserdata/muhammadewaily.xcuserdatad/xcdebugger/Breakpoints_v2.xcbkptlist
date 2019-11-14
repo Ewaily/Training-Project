@@ -7,17 +7,65 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A8E80547-B0E6-40AD-9AD4-C6494F2F383F"
-            shouldBeEnabled = "Yes"
+            uuid = "802A3C70-9660-4403-B3BE-0CF3EE6C905C"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Swifty/Scenes/Login/Models/UserModel.swift"
+            filePath = "Swifty/Scenes/Logout/LogoutViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "UserType"
-            landmarkType = "13">
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "logoutButtonPressed(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D58EACEC-1D8D-44DF-8843-40A75D0375D8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Swifty/Scenes/Logout/LogoutViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "logoutButtonPressed(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D58EACEC-1D8D-44DF-8843-40A75D0375D8 - 92f1614f5961e82b"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Swifty.LogoutViewController.logoutButtonPressed(__C.UIButton) -&gt; ()"
+                  moduleName = "Swifty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadewaily/Desktop/Swifty/Swifty/Scenes/Logout/LogoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "170">
+               </Location>
+               <Location
+                  uuid = "D58EACEC-1D8D-44DF-8843-40A75D0375D8 - 5892c16bcf22d42a"
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__C.UIAlertAction) -&gt; () in Swifty.LogoutViewController.logoutButtonPressed(__C.UIButton) -&gt; ()"
+                  moduleName = "Swifty"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/muhammadewaily/Desktop/Swifty/Swifty/Scenes/Logout/LogoutViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "125">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

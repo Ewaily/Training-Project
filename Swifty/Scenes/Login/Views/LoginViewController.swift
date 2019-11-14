@@ -20,39 +20,25 @@ class LoginViewController: UIViewController{
     
     @IBAction func pressLogin(_ sender: Any) {
                 
-//        guard let email = usernameTextField.text, !email.isEmpty else {return}
-//        guard let password = passwordTextField.text, !password.isEmpty else {return}
-//        loginViewModel.sendRequest(email: email, password: password) {
-//                (error:Error?, userModel:UserModel?) in
-//
-//                    if userModel != nil  {
-//                        self.navigateToTabBar(user: userModel!)
-//                            }
-//                    else {
-//                        let alert = UIAlertController(title: "Login Failed", message: "Please Try Again", preferredStyle: .alert)
-//                        let action = UIAlertAction(title: "Try Again", style: .default, handler: nil)
-//                        alert.addAction(action)
-//                        self.present(alert, animated: true ,completion: nil)
-//                }
-//                    }
-        temp()
-    }
-    
-    func temp() {
-
-        loginViewModel.sendRequest(email: "m@s34.com", password: "12345678") {
+        guard let email = usernameTextField.text, !email.isEmpty else {
+            showAlert(title: "Alert", message: "Complete the missing fields", alertStyle: .alert, defaultHandler: nil, cancelHandler: nil, defaultActionTitle: "Ok", cancelActionTitle: nil, destructiveActionTitle: nil)
+            return
+        }
+        guard let password = passwordTextField.text, !password.isEmpty else {
+            showAlert(title: "Alert", message: "Complete the missing fields", alertStyle: .alert, defaultHandler: nil, cancelHandler: nil, defaultActionTitle: "Ok", cancelActionTitle: nil, destructiveActionTitle: nil)
+            return
+        }
+        
+        loginViewModel.sendRequest(email: email, password: password) {
                 (error:Error?, userModel:UserModel?) in
-                    
+
                     if userModel != nil  {
                         self.navigateToTabBar(user: userModel!)
                             }
-                    else {
-                        let alert = UIAlertController(title: "Login Failed", message: "Please Try Again", preferredStyle: .alert)
-                        let action = UIAlertAction(title: "Try Again", style: .default, handler: nil)
-                        alert.addAction(action)
-                        self.present(alert, animated: true ,completion: nil)
-                }
-                    }
+                    else if error != nil {
+                        self.showAlert(title: "Login Failed", message: "Please try again", alertStyle: .alert, defaultHandler: nil, cancelHandler: nil, defaultActionTitle: "Ok", cancelActionTitle: nil, destructiveActionTitle: nil)
+            }
+        }
     }
     
     override func viewDidLoad() {

@@ -22,12 +22,12 @@ class LoginViewModel {
 
     func sendRequest(email: String, password: String, completion: @escaping (Error?,UserModel?) -> Void ){
         NetworkCall.login(email: email, password: password) { (error:Error?, userModel: UserModel?) in
-                        if let lUserModel = userModel  {
-                               completion(nil,lUserModel)
-                                }
-                        else {
-                            completion(error,nil)
-                    }
-                        }
+            if let lUserModel = userModel  {
+                completion(nil,lUserModel)
+            }
+            else {
+                completion(error,nil)
+            }
+        }
     }
 }

@@ -14,9 +14,18 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            if (appDelegate.userManager.checkUser()) {
+                if let viewController = UIStoryboard(name: "TabBar", bundle: nil).instantiateViewController(withIdentifier: "TabBar") as? TabBar {
+                    let navigationController = UINavigationController()
+                    navigationController.viewControllers = [viewController]
+                    navigationController.hidesBarsOnTap = true
+                    self.window?.rootViewController = navigationController
+                }
+            }
+        }
+
+        
         guard let _ = (scene as? UIWindowScene) else { return }
     }
 

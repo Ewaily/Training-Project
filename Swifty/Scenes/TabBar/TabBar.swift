@@ -10,7 +10,7 @@ import UIKit
 
 class TabBar: UITabBarController {
 
-    var currentUser: UserModel?
+    var currentUser = (UIApplication.shared.delegate as? AppDelegate)?.userManager.currentUser
     
     override func viewDidLoad() {
         super.viewDidLoad()

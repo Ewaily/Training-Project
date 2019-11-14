@@ -9,7 +9,7 @@
 import Foundation
 import SwiftyJSON
 
-class UserModel {
+class UserModel: Codable {
     var name: String?
     var email: String?
     var mobile: Double?
@@ -31,14 +31,50 @@ class UserModel {
             self.userType = .customer
         }
     }
+    
+    func saveUserData(){
+        do{
+            let encodedData = try PropertyListEncoder().encode(self)
+            UserDefaults.standard.set(encodedData, forKey: "SwiftyUser")
+            print("SUCCESS SAVE USER DATA")
+        } catch{
+            print("Can not Encode User Data \(error)")
+        }
+    }
+    
+    func deleteUserData(){
+        UserDefaults.standard.removeObject(forKey: "SwiftyUser")
+    }
+    
+    static func loadUserData() -> UserModel?{
+        var user: UserModel?
+        
+        do{
+            if let encodedData = UserDefaults.standard.value(forKey: "SwiftyUser") as? Data {
+                user = try PropertyListDecoder().decode(UserModel.self,from: encodedData)
+            }
+            else{
+                print("Failed to load encoded data from user Defaults")
+            }
+        }
+        catch{
+            print("ERROR Decoding User Data from Cache \(error)")
+        }
+        
+        return user
+    }
+    
+    static func clearUserData(){
+        UserDefaults.standard.removeObject(forKey: "SwiftyUser")
+    }
 }
 
-enum UserType {
+enum UserType: String, Codable {
     case employee
     case customer
 }
 
-class Coupon {
+class Coupon: Codable {
     var added: Int?
     var redeemed: Int?
     var viewed: Int?
@@ -54,7 +90,7 @@ class Coupon {
     }
 }
 
-class Token {
+class Token: Codable {
     var id: Int?
     var userId: Int?
     var token: String?

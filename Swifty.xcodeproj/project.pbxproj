@@ -30,7 +30,15 @@
 		104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8356237AEA15007531DE /* CompanyViewController.swift */; };
 		104D835B237AEC71007531DE /* FeedbackTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */; };
 		104D835C237AEC71007531DE /* FeedbackTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */; };
+		1052985323808EDA00358DBE /* PagerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1052985123808EDA00358DBE /* PagerTableViewCell.swift */; };
+		1052985423808EDA00358DBE /* PagerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1052985223808EDA00358DBE /* PagerTableViewCell.xib */; };
+		105298572380A0C800358DBE /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105298552380A0C800358DBE /* ImageTableViewCell.swift */; };
+		105298582380A0C800358DBE /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 105298562380A0C800358DBE /* ImageTableViewCell.xib */; };
+		1052985B2380A2ED00358DBE /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105298592380A2ED00358DBE /* CustomCollectionViewCell.swift */; };
+		1052985C2380A2ED00358DBE /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1052985A2380A2ED00358DBE /* CustomCollectionViewCell.xib */; };
 		106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */; };
+		108FDD0523815C68001E1E41 /* GalleryPagerCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108FDD0323815C68001E1E41 /* GalleryPagerCellCollectionViewCell.swift */; };
+		108FDD0623815C68001E1E41 /* GalleryPagerCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 108FDD0423815C68001E1E41 /* GalleryPagerCellCollectionViewCell.xib */; };
 		1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */; };
 		1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */; };
 		10B7C14C237C0AE800D78610 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10B7C14B237C0AE800D78610 /* Main.storyboard */; };
@@ -72,7 +80,15 @@
 		104D8356237AEA15007531DE /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackTableViewCell.swift; sourceTree = "<group>"; };
 		104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedbackTableViewCell.xib; sourceTree = "<group>"; };
+		1052985123808EDA00358DBE /* PagerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerTableViewCell.swift; sourceTree = "<group>"; };
+		1052985223808EDA00358DBE /* PagerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PagerTableViewCell.xib; sourceTree = "<group>"; };
+		105298552380A0C800358DBE /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		105298562380A0C800358DBE /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		105298592380A2ED00358DBE /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		1052985A2380A2ED00358DBE /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		106A36BC2374135E00F3ACC2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		108FDD0323815C68001E1E41 /* GalleryPagerCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryPagerCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		108FDD0423815C68001E1E41 /* GalleryPagerCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryPagerCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsAndProfileTableViewCell.swift; sourceTree = "<group>"; };
 		1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationsAndProfileTableViewCell.xib; sourceTree = "<group>"; };
 		10B7C14B237C0AE800D78610 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -165,6 +181,10 @@
 				102DE48D2374748800855DA3 /* FacilitiesTableViewCell.xib */,
 				1097B8E02379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib */,
 				104D835A237AEC71007531DE /* FeedbackTableViewCell.xib */,
+				1052985223808EDA00358DBE /* PagerTableViewCell.xib */,
+				105298562380A0C800358DBE /* ImageTableViewCell.xib */,
+				1052985A2380A2ED00358DBE /* CustomCollectionViewCell.xib */,
+				108FDD0423815C68001E1E41 /* GalleryPagerCellCollectionViewCell.xib */,
 			);
 			path = XIBs;
 			sourceTree = "<group>";
@@ -175,6 +195,10 @@
 				102DE48C2374748800855DA3 /* FacilitiesTableViewCell.swift */,
 				1097B8DF2379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift */,
 				104D8359237AEC71007531DE /* FeedbackTableViewCell.swift */,
+				1052985123808EDA00358DBE /* PagerTableViewCell.swift */,
+				105298552380A0C800358DBE /* ImageTableViewCell.swift */,
+				105298592380A2ED00358DBE /* CustomCollectionViewCell.swift */,
+				108FDD0323815C68001E1E41 /* GalleryPagerCellCollectionViewCell.swift */,
 			);
 			path = NIBs;
 			sourceTree = "<group>";
@@ -441,19 +465,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				105298582380A0C800358DBE /* ImageTableViewCell.xib in Resources */,
 				104D835C237AEC71007531DE /* FeedbackTableViewCell.xib in Resources */,
 				1041BEBF2379C27900D49F65 /* Home.storyboard in Resources */,
 				1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */,
+				1052985423808EDA00358DBE /* PagerTableViewCell.xib in Resources */,
 				10EF7FD52371A71C00572C9D /* LaunchScreen.storyboard in Resources */,
 				10EF7FD22371A71C00572C9D /* Assets.xcassets in Resources */,
 				10DCD3E42374530500C49D46 /* Profile.storyboard in Resources */,
 				10B7C14C237C0AE800D78610 /* Main.storyboard in Resources */,
+				108FDD0623815C68001E1E41 /* GalleryPagerCellCollectionViewCell.xib in Resources */,
 				1041BEBB2379C25D00D49F65 /* Favorite.storyboard in Resources */,
 				1041BEBD2379C26C00D49F65 /* Company.storyboard in Resources */,
 				1041BEB92379C25000D49F65 /* Notification.storyboard in Resources */,
 				10B7C14E237C0C0800D78610 /* SF-UI-Display-Regular.ttf in Resources */,
 				102DE48F2374748800855DA3 /* FacilitiesTableViewCell.xib in Resources */,
 				100A1CAE23795EA200E45C12 /* TabBar.storyboard in Resources */,
+				1052985C2380A2ED00358DBE /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -509,17 +537,21 @@
 				104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */,
 				101E0CE42373159A005D550F /* URL.swift in Sources */,
 				10DCD3E6237454DE00C49D46 /* ProfileView.swift in Sources */,
+				1052985B2380A2ED00358DBE /* CustomCollectionViewCell.swift in Sources */,
 				101E0CE623731A15005D550F /* Alert.swift in Sources */,
 				100A1CB3237978B900E45C12 /* UserManager.swift in Sources */,
 				104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */,
 				10443CBD237823FB0040DA5F /* isConnected.swift in Sources */,
+				105298572380A0C800358DBE /* ImageTableViewCell.swift in Sources */,
 				102D6FC3237A085B00D6CB44 /* Color.swift in Sources */,
 				102D6FC5237A0C9600D6CB44 /* FacilityModel.swift in Sources */,
 				10EF7FCD2371A71800572C9D /* LoginViewController.swift in Sources */,
 				10BF8D4D237D845D0089C886 /* LogoutViewController.swift in Sources */,
 				10EF7FC92371A71800572C9D /* AppDelegate.swift in Sources */,
 				106A36BD2374135E00F3ACC2 /* LoginViewModel.swift in Sources */,
+				1052985323808EDA00358DBE /* PagerTableViewCell.swift in Sources */,
 				102DE48E2374748800855DA3 /* FacilitiesTableViewCell.swift in Sources */,
+				108FDD0523815C68001E1E41 /* GalleryPagerCellCollectionViewCell.swift in Sources */,
 				102D6FC7237A0DAE00D6CB44 /* FacilityViewModel.swift in Sources */,
 				10443CBB23781F020040DA5F /* SwiftyNetwork.swift in Sources */,
 				10EF7FCB2371A71800572C9D /* SceneDelegate.swift in Sources */,

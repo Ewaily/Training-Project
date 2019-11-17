@@ -6,11 +6,6 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="SF-UI-Display-Regular.ttf">
-            <string>SFUIDisplay-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Notifications-->
         <scene sceneID="Wgv-vn-OUf">
@@ -20,23 +15,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notifications" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wMZ-Uj-JaL">
-                                <rect key="frame" x="44.5" y="412" width="325.5" height="72"/>
-                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="60"/>
-                                <color key="textColor" red="0.21176470589999999" green="0.45882352939999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ycN-L6-xbN">
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="Xzy-fQ-KbX">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </view>
+                                <connections>
+                                    <outlet property="dataSource" destination="pJG-Oc-w2m" id="HHt-v5-xMh"/>
+                                    <outlet property="delegate" destination="pJG-Oc-w2m" id="dag-ui-Dxh"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="wMZ-Uj-JaL" firstAttribute="centerY" secondItem="hOx-hD-3r0" secondAttribute="centerY" id="UTm-PZ-ZwN"/>
-                            <constraint firstItem="wMZ-Uj-JaL" firstAttribute="centerX" secondItem="hOx-hD-3r0" secondAttribute="centerX" id="Uhg-W2-1UO"/>
+                            <constraint firstItem="ycN-L6-xbN" firstAttribute="top" secondItem="5Ip-F7-OnO" secondAttribute="top" id="axy-Yt-IPP"/>
+                            <constraint firstItem="5Ip-F7-OnO" firstAttribute="bottom" secondItem="ycN-L6-xbN" secondAttribute="bottom" id="rLb-JP-mBf"/>
+                            <constraint firstItem="5Ip-F7-OnO" firstAttribute="trailing" secondItem="ycN-L6-xbN" secondAttribute="trailing" id="w0y-DD-0GK"/>
+                            <constraint firstItem="ycN-L6-xbN" firstAttribute="leading" secondItem="5Ip-F7-OnO" secondAttribute="leading" id="xR7-I2-pdZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Ip-F7-OnO"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Notifications" image="icTabbarNotifNormal" id="QMu-R5-ngL"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="tableView" destination="ycN-L6-xbN" id="UQo-2H-qrx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CeH-aI-7qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

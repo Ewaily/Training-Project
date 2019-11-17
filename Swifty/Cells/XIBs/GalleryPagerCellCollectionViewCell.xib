@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-UI-Display-Regular.ttf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GalleryPagerCellCollectionViewCell" id="gTV-IL-0wX" customClass="GalleryPagerCellCollectionViewCell" customModule="Swifty" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="229" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="229" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DryCleaning" translatesAutoresizingMaskIntoConstraints="NO" id="I5h-Jw-U9X">
+                        <rect key="frame" x="0.0" y="0.0" width="229" height="101"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cB-S4-vug">
+                        <rect key="frame" x="0.0" y="0.0" width="229" height="101"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rFg-dK-1mD">
+                                <rect key="frame" x="20" y="3" width="189" height="48"/>
+                                <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rFg-dK-1mD" secondAttribute="bottom" constant="50" id="Qd9-j8-pYy"/>
+                            <constraint firstItem="rFg-dK-1mD" firstAttribute="leading" secondItem="8cB-S4-vug" secondAttribute="leading" constant="20" id="eWq-Ia-iyj"/>
+                            <constraint firstAttribute="trailing" secondItem="rFg-dK-1mD" secondAttribute="trailing" constant="20" id="tRY-1P-sWd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="8cB-S4-vug" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dor-HL-zyJ"/>
+                <constraint firstAttribute="bottom" secondItem="8cB-S4-vug" secondAttribute="bottom" id="QRy-zh-wHQ"/>
+                <constraint firstAttribute="trailing" secondItem="8cB-S4-vug" secondAttribute="trailing" id="ZeO-43-wRg"/>
+                <constraint firstItem="8cB-S4-vug" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="h5C-dR-lIF"/>
+                <constraint firstAttribute="bottom" secondItem="I5h-Jw-U9X" secondAttribute="bottom" id="hRJ-oU-lQG"/>
+                <constraint firstItem="I5h-Jw-U9X" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="idt-dT-hpi"/>
+                <constraint firstAttribute="trailing" secondItem="I5h-Jw-U9X" secondAttribute="trailing" id="kxe-RO-EDA"/>
+                <constraint firstItem="I5h-Jw-U9X" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nRO-Bk-Er3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="229" height="101"/>
+            <connections>
+                <outlet property="image" destination="I5h-Jw-U9X" id="llD-dT-BYM"/>
+                <outlet property="label" destination="rFg-dK-1mD" id="Jnm-p0-PhT"/>
+                <outlet property="labelMask" destination="8cB-S4-vug" id="EBT-Tf-e1D"/>
+            </connections>
+            <point key="canvasLocation" x="86.231884057971016" y="67.299107142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="DryCleaning" width="32" height="32"/>
+    </resources>
+</document>

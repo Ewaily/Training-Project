@@ -52,42 +52,9 @@ class ProfileView: UIViewController {
 
 
 extension ProfileView: UITableViewDelegate {
-}
-
-extension ProfileView: UITableViewDataSource {
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
-    }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        switch section {
-        case 0 :
-            return 1
-        default:
-            return facilities.count
-        }
-    }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        switch indexPath.section {
-        case 0 :
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as? NotificationsAndProfileTableViewCell {
-            cell.delegate = self
-            return cell
-            }
-        default:
-            let data = facilities[indexPath.row]
-            if let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as? FacilitiesTableViewCell {
-            cell.configureCell(cellData: data)
-            return cell
-            }
-        }
-        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -111,6 +78,39 @@ extension ProfileView: UITableViewDataSource {
             return 46
         }
         return 0
+    }
+}
+
+extension ProfileView: UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        switch section {
+        case 0 :
+            return 1
+        default:
+            return facilities.count
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        switch indexPath.section {
+        case 0 :
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "NotifiAndProfileCell") as? NotificationsAndProfileTableViewCell {
+            cell.delegate = self
+            return cell
+            }
+        default:
+            let data = facilities[indexPath.row]
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "FacilityCell") as? FacilitiesTableViewCell {
+            cell.configureCell(cellData: data)
+            return cell
+            }
+        }
+        return UITableViewCell()
     }
 }
 

@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="9Kj-Fb-Ehz">
-                        <rect key="frame" x="0.0" y="0.0" width="427" height="145"/>
+                        <rect key="frame" x="0.0" y="0.0" width="427" height="150"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vMa-cP-Pdi">
                             <size key="itemSize" width="50" height="50"/>
@@ -32,10 +32,10 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="9Kj-Fb-Ehz" secondAttribute="trailing" id="8yY-Xe-0lJ"/>
-                    <constraint firstItem="9Kj-Fb-Ehz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NmX-HV-pP7"/>
-                    <constraint firstAttribute="bottom" secondItem="9Kj-Fb-Ehz" secondAttribute="bottom" constant="5" id="pqR-P7-oJH"/>
-                    <constraint firstItem="9Kj-Fb-Ehz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="rYk-AE-rhN"/>
+                    <constraint firstItem="9Kj-Fb-Ehz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HaL-4I-iL1"/>
+                    <constraint firstAttribute="trailing" secondItem="9Kj-Fb-Ehz" secondAttribute="trailing" id="X3O-CA-Eps"/>
+                    <constraint firstAttribute="bottom" secondItem="9Kj-Fb-Ehz" secondAttribute="bottom" id="Zcs-CO-1q8"/>
+                    <constraint firstItem="9Kj-Fb-Ehz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zZI-7q-AOu"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

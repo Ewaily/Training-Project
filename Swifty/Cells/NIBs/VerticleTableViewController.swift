@@ -1,15 +1,15 @@
 //
-//  ImageTableViewCell.swift
+//  VerticleTableViewController.swift
 //  Swifty
 //
-//  Created by Muhammad Ewaily on 11/16/19.
+//  Created by Muhammad Ewaily on 11/17/19.
 //  Copyright © 2019 Muhammad Ewaily. All rights reserved.
 //
 
 import UIKit
 
-class ImageTableViewCell: UITableViewCell {
-
+class VerticleTableViewController: UITableViewCell {
+        
     @IBOutlet weak var collectionView: UICollectionView!
     let facilities: [FacilityModel] = FacilityModel.creatCellData()
     
@@ -19,13 +19,13 @@ class ImageTableViewCell: UITableViewCell {
     }
 
     func setupTable() {
-        let CollectionViewXibFile = UINib(nibName: "CustomCollectionViewCell", bundle: nil)
-        collectionView.register(CollectionViewXibFile, forCellWithReuseIdentifier: "CustomCollectionViewCell")
+        let lCollectionViewXibFile = UINib(nibName: "CustomCollectionViewCell", bundle: nil)
+        collectionView.register(lCollectionViewXibFile, forCellWithReuseIdentifier: "CustomCollectionViewCell")
     }
     
 }
 
-extension ImageTableViewCell: UICollectionViewDataSource {
+extension VerticleTableViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return facilities.count
     }
@@ -40,14 +40,17 @@ extension ImageTableViewCell: UICollectionViewDataSource {
     
 }
 
-extension ImageTableViewCell: UICollectionViewDelegate {
+extension VerticleTableViewController: UICollectionViewDelegate {
 
 }
 
-extension ImageTableViewCell: UICollectionViewDelegateFlowLayout {
+extension VerticleTableViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: frame.width * 0.3, height: 150)
+        
+        let padding: CGFloat =  50
+        let collectionViewSize = collectionView.frame.size.width - padding
+
+        return CGSize(width: collectionViewSize/2, height: 120)
     }
 }
-

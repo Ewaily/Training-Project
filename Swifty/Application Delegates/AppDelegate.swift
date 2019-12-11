@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var userManager = UserManager.sharedUserManager
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        GMSServices.provideAPIKey("AIzaSyA99lrJvTdA7KGdP_Bd4ZdK0ncpymTQGt0")
         
         return true
     }

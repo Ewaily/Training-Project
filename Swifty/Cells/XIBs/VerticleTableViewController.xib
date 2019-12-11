@@ -10,39 +10,51 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerticleTableViewController" customModule="Swifty" customModuleProvider="target"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="VerticleTableViewController" id="XzB-F4-kBN" customClass="VerticleTableViewController" customModule="Swifty" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="427" height="150"/>
+            <rect key="frame" x="0.0" y="0.0" width="520" height="189"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XzB-F4-kBN" id="9Yq-Xa-ah9">
-                <rect key="frame" x="0.0" y="0.0" width="427" height="150"/>
+                <rect key="frame" x="0.0" y="0.0" width="520" height="189"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-aZ-wa8">
-                        <rect key="frame" x="0.0" y="0.0" width="427" height="150"/>
-                        <color key="backgroundColor" red="0.26358965039999999" green="0.50912636519999999" blue="0.47036463020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qD3-iE-vnA">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <connections>
-                            <outlet property="dataSource" destination="XzB-F4-kBN" id="upH-Ku-hWv"/>
-                            <outlet property="delegate" destination="XzB-F4-kBN" id="t6J-np-yqb"/>
-                        </connections>
-                    </collectionView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h7g-TI-Zyc">
+                        <rect key="frame" x="0.0" y="0.0" width="520" height="189"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="QlJ-aZ-wa8">
+                                <rect key="frame" x="0.0" y="0.0" width="520" height="189"/>
+                                <color key="backgroundColor" red="0.26358965039999999" green="0.50912636519999999" blue="0.47036463020000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qD3-iE-vnA">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="XzB-F4-kBN" id="upH-Ku-hWv"/>
+                                    <outlet property="delegate" destination="XzB-F4-kBN" id="t6J-np-yqb"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QlJ-aZ-wa8" secondAttribute="bottom" id="5dl-VL-WZH"/>
+                            <constraint firstItem="QlJ-aZ-wa8" firstAttribute="leading" secondItem="h7g-TI-Zyc" secondAttribute="leading" id="XG5-yL-6xy"/>
+                            <constraint firstAttribute="trailing" secondItem="QlJ-aZ-wa8" secondAttribute="trailing" id="Zux-QM-rin"/>
+                            <constraint firstItem="QlJ-aZ-wa8" firstAttribute="top" secondItem="h7g-TI-Zyc" secondAttribute="top" id="jW1-Pb-a4o"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="QlJ-aZ-wa8" firstAttribute="top" secondItem="9Yq-Xa-ah9" secondAttribute="top" id="1Td-Ur-Nav"/>
-                    <constraint firstItem="QlJ-aZ-wa8" firstAttribute="leading" secondItem="9Yq-Xa-ah9" secondAttribute="leading" id="9hX-1Z-iI8"/>
-                    <constraint firstAttribute="trailing" secondItem="QlJ-aZ-wa8" secondAttribute="trailing" id="EIm-Vn-G40"/>
-                    <constraint firstAttribute="bottom" secondItem="QlJ-aZ-wa8" secondAttribute="bottom" id="GTx-fB-XHr"/>
+                    <constraint firstItem="h7g-TI-Zyc" firstAttribute="top" secondItem="9Yq-Xa-ah9" secondAttribute="top" id="XKW-dB-yem"/>
+                    <constraint firstAttribute="bottom" secondItem="h7g-TI-Zyc" secondAttribute="bottom" id="i4y-eR-DTr"/>
+                    <constraint firstItem="h7g-TI-Zyc" firstAttribute="leading" secondItem="9Yq-Xa-ah9" secondAttribute="leading" id="vys-6E-Mzu"/>
+                    <constraint firstAttribute="trailing" secondItem="h7g-TI-Zyc" secondAttribute="trailing" id="wSs-eA-fth"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="NtI-nJ-4dC"/>
             <connections>
                 <outlet property="collectionView" destination="QlJ-aZ-wa8" id="Inj-Z8-0qj"/>
             </connections>
-            <point key="canvasLocation" x="60.14492753623189" y="117.1875"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="130.24553571428572"/>
         </tableViewCell>
     </objects>
 </document>

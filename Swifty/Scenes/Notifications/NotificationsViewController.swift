@@ -24,9 +24,8 @@ class NotificationsViewController: UIViewController {
         tableView.register(ImageXibFile, forCellReuseIdentifier: "ImageTableViewCell")
         let VerticleXibFile = UINib(nibName: "VerticleTableViewController", bundle: nil)
         tableView.register(VerticleXibFile, forCellReuseIdentifier: "VerticleTableViewController")
-        tableView.estimatedRowHeight = 120
-        tableView.rowHeight = UITableView.automaticDimension
         tableView.reloadData()
+        tableView.estimatedRowHeight = UITableView.automaticDimension
     }
 
 }
@@ -67,7 +66,9 @@ extension NotificationsViewController: UITableViewDelegate,UITableViewDataSource
         case 1:
             return 150
         case 2:
+            print(UITableView.automaticDimension)
             return UITableView.automaticDimension
+
         default:
             return 0
         }

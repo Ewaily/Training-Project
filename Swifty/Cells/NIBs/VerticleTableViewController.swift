@@ -34,12 +34,12 @@ extension VerticleTableViewController: UICollectionViewDataSource {
         let data = facilities[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CustomCollectionViewCell", for: indexPath) as! CustomCollectionViewCell
         cell.configureCell(cellData: data)
+        
         return cell
             }
     
     
 }
-
 extension VerticleTableViewController: UICollectionViewDelegate {
 
 }

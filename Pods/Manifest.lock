@@ -1,6 +1,14 @@
 PODS:
   - Alamofire (5.0.0-rc.3)
   - FSPagerView (0.8.3)
+  - GoogleMaps (3.6.0):
+    - GoogleMaps/Maps (= 3.6.0)
+  - GoogleMaps/Base (3.6.0)
+  - GoogleMaps/Maps (3.6.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.6.0):
+    - GoogleMaps/Base (= 3.6.0)
+  - ReadMoreTextView (3.0.1)
   - SDWebImage (5.3.1):
     - SDWebImage/Core (= 5.3.1)
   - SDWebImage/Core (5.3.1)
@@ -10,6 +18,9 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 5.0.0-rc.3)
   - FSPagerView
+  - GoogleMaps
+  - GooglePlaces
+  - ReadMoreTextView
   - SDWebImage (~> 5.0)
   - SwiftyJSON (~> 4.0)
   - TweeTextField
@@ -18,6 +29,9 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - FSPagerView
+    - GoogleMaps
+    - GooglePlaces
+    - ReadMoreTextView
     - SDWebImage
     - SwiftyJSON
     - TweeTextField
@@ -25,10 +39,13 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: ca8c0de6906873be89d6deec5c8de279e00bf872
   FSPagerView: 670405b2f18e2a87fa37f20b00de783e562c25a8
+  GoogleMaps: 82f8fe307193bb4de6ef6bf9e88f1d624b718f9d
+  GooglePlaces: 1b9d29cf3e164903d873600f511f42acdfe85294
+  ReadMoreTextView: 19147adf93abce6d7271e14031a00303fe28720d
   SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
   TweeTextField: 2bfb6c48fdbf6eb8038260430244c9f6ebb47bce
 
-PODFILE CHECKSUM: 2b6edb74ed4453871eea49e741cf88f059500024
+PODFILE CHECKSUM: bda4bc5e988e6983782b1ddcc791612ff480645e
 
 COCOAPODS: 1.8.4

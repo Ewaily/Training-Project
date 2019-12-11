@@ -16,6 +16,16 @@
             </objects>
             <point key="canvasLocation" x="3255.072463768116" y="61.607142857142854"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="AON-Y0-9CN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="PRi-jH-6ec" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="2fx-53-NEB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hul-8p-26W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3107" y="118"/>
+        </scene>
         <!--Tab Bar-->
         <scene sceneID="hI3-Wb-bCo">
             <objects>
@@ -39,6 +49,7 @@
                         <segue destination="nvZ-LV-Kci" kind="relationship" relationship="viewControllers" id="UXi-Wa-ffR"/>
                         <segue destination="jab-mH-xIW" kind="relationship" relationship="viewControllers" id="liZ-4O-GvH"/>
                         <segue destination="QaP-oj-hUD" kind="relationship" relationship="viewControllers" id="5d8-7u-msJ"/>
+                        <segue destination="PRi-jH-6ec" kind="relationship" relationship="viewControllers" id="MLq-9b-hEI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UYY-8h-4VG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

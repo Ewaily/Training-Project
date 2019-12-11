@@ -26,6 +26,11 @@ class ProfileView: UIViewController {
         }
         setupTable()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = true
+    }
 
     func setupView(currentUser: UserModel) {
         nameLabel.text = currentUser.name

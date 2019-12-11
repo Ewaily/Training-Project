@@ -25,6 +25,8 @@
 		10443CBB23781F020040DA5F /* SwiftyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBA23781F020040DA5F /* SwiftyNetwork.swift */; };
 		10443CBD237823FB0040DA5F /* isConnected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBC237823FB0040DA5F /* isConnected.swift */; };
 		10443CBF2378242E0040DA5F /* NetworkCalls.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10443CBE2378242E0040DA5F /* NetworkCalls.swift */; };
+		10447B8F2381A1D900101419 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10447B8E2381A1D800101419 /* Map.storyboard */; };
+		10447B932381A1F000101419 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10447B922381A1F000101419 /* MapViewController.swift */; };
 		104D834E237AB484007531DE /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D834D237AB484007531DE /* NotificationsViewController.swift */; };
 		104D8354237AE483007531DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8353237AE483007531DE /* HomeViewController.swift */; };
 		104D8357237AEA15007531DE /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D8356237AEA15007531DE /* CompanyViewController.swift */; };
@@ -77,6 +79,8 @@
 		10443CBA23781F020040DA5F /* SwiftyNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyNetwork.swift; sourceTree = "<group>"; };
 		10443CBC237823FB0040DA5F /* isConnected.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isConnected.swift; sourceTree = "<group>"; };
 		10443CBE2378242E0040DA5F /* NetworkCalls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCalls.swift; sourceTree = "<group>"; };
+		10447B8E2381A1D800101419 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		10447B922381A1F000101419 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		104D834D237AB484007531DE /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		104D8353237AE483007531DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		104D8356237AEA15007531DE /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,14 @@
 				100A1CB52379AD3800E45C12 /* TabBar.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		10447B942381A1FA00101419 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				10447B922381A1F000101419 /* MapViewController.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 		104D834F237ADE9D007531DE /* Notifications */ = {
@@ -307,6 +319,7 @@
 				1041BEBA2379C25D00D49F65 /* Favorite.storyboard */,
 				1041BEBC2379C26C00D49F65 /* Company.storyboard */,
 				1041BEBE2379C27900D49F65 /* Home.storyboard */,
+				10447B8E2381A1D800101419 /* Map.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -321,6 +334,7 @@
 				104D8350237AE42F007531DE /* Home */,
 				104D834F237ADE9D007531DE /* Notifications */,
 				104D8355237AE9F3007531DE /* Company */,
+				10447B942381A1FA00101419 /* Map */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -423,6 +437,7 @@
 				10EF7FC22371A71800572C9D /* Frameworks */,
 				10EF7FC32371A71800572C9D /* Resources */,
 				2032C02104806905787945D5 /* [CP] Embed Pods Frameworks */,
+				BB83B0089B2C73F52A6F4DE4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -476,6 +491,7 @@
 				1041BEBF2379C27900D49F65 /* Home.storyboard in Resources */,
 				1097B8E22379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.xib in Resources */,
 				1052985423808EDA00358DBE /* PagerTableViewCell.xib in Resources */,
+				10447B8F2381A1D900101419 /* Map.storyboard in Resources */,
 				10EF7FD52371A71C00572C9D /* LaunchScreen.storyboard in Resources */,
 				10EF7FD22371A71C00572C9D /* Assets.xcassets in Resources */,
 				10DCD3E42374530500C49D46 /* Profile.storyboard in Resources */,
@@ -510,6 +526,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swifty/Pods-Swifty-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB83B0089B2C73F52A6F4DE4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swifty/Pods-Swifty-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Swifty/Pods-Swifty-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Swifty/Pods-Swifty-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F0BC1724E309E57D826974A1 /* [CP] Check Pods Manifest.lock */ = {
@@ -568,6 +601,7 @@
 				104D835B237AEC71007531DE /* FeedbackTableViewCell.swift in Sources */,
 				10443CBF2378242E0040DA5F /* NetworkCalls.swift in Sources */,
 				100A1CB62379AD3800E45C12 /* TabBar.swift in Sources */,
+				10447B932381A1F000101419 /* MapViewController.swift in Sources */,
 				1097B8E12379D4B10017AAC1 /* NotificationsAndProfileTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
